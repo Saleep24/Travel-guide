@@ -76,17 +76,17 @@ export default function Home() {
               {
                 city: "Lübeck",
                 description: "Medieval charm meets modern culture in this UNESCO World Heritage site",
-                image: "/placeholder.svg?height=600&width=800",
+                image: "/images/lubeck.jpg?height=600&width=800",
               },
               {
                 city: "Hamburg",
                 description: "Harbor life, street art, and vibrant nightlife in Germany's gateway to the world",
-                image: "/placeholder.svg?height=600&width=800",
+                image: "/images/hamburg.jpg?height=600&width=800",
               },
               {
                 city: "Berlin",
                 description: "Underground scenes, street art, and cultural revolution in the capital",
-                image: "/placeholder.svg?height=600&width=800",
+                image: "/images/main.jpg?height=600&width=800",
               },
             ].map((city) => (
               <motion.div key={city.city} className="group relative rounded-xl overflow-hidden" whileHover={{ y: -5 }}>
