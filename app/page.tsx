@@ -16,7 +16,7 @@ export default function Home() {
               href="/"
               className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"
             >
-              Northern Germany
+              GenZ Travel Guide
             </Link>
 
             <div className="hidden md:flex items-center space-x-8">
@@ -52,7 +52,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative h-[90vh] flex items-center justify-center">
         <Image
-          src="/placeholder.svg?height=1080&width=1920"
+          src="/images/main.jpg?height=1080&width=1920"
           alt="Northern Germany Cityscape"
           fill
           className="object-cover"
