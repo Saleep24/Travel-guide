@@ -166,26 +166,31 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Featured Experiences */}
-      <section className="py-20 px-4">
+{/* Featured Experiences */}
+<section className="py-20 px-4">
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold mb-12 text-center">Must-Try Experiences</h2>
           <div className="grid md:grid-cols-2 gap-8">
             {[
-              "Street Art Tours in Berlin",
-              "Hamburg Fish Market",
-              "Lübeck's Marzipan Culture",
-              "Underground Music Scene",
+              { name: "Street Art Tours in Berlin", image: "/images/berlin-street-art.PNG" },
+              { name: "Hamburg Fish Market", image: "/images/hamburg-fish-market.jpg" },
+              { name: "Lübeck's Marzipan Culture", image: "/images/lubeck-marzipan.jpg" },
+              { name: "Underground Music Scene", image: "/images/berlin-underground-music.jpg" },
             ].map((experience) => (
               <motion.div
-                key={experience}
+                key={experience.name}
                 className="relative h-64 rounded-xl overflow-hidden"
                 whileHover={{ scale: 1.02 }}
               >
-                <Image src="/placeholder.svg?height=400&width=600" alt={experience} fill className="object-cover" />
+                <Image
+                  src={experience.image || "/placeholder.svg"}
+                  alt={experience.name}
+                  fill
+                  className="object-cover"
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                 <div className="absolute bottom-0 left-0 p-6">
-                  <h3 className="text-xl font-semibold text-white">{experience}</h3>
+                  <h3 className="text-xl font-semibold text-white">{experience.name}</h3>
                 </div>
               </motion.div>
             ))}
