@@ -175,7 +175,8 @@ export default function Home() {
               { name: "Street Art Tours in Berlin", image: "/images/berlin-street-art.PNG" },
               { name: "Hamburg Fish Market", image: "/images/hamburg-fish-market.jpg" },
               { name: "Lübeck's Marzipan Culture", image: "/images/lubeck-marzipan.jpg" },
-              { name: "Underground Music Scene", image: "/images/berlin-underground-music.jpg" },
+              { name: "Alley Culture in Lübeck", image: "/images/lubeck-alley.jpg" },
+              { name: "Lubeck Christmas Market", image: "/images/lubeck-christmas.jpg" }
             ].map((experience) => (
               <motion.div
                 key={experience.name}
