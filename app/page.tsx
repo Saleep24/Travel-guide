@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import { Search, BookmarkPlus, Menu, ArrowRight } from "lucide-react"
+import { Search, BookmarkPlus, Menu, ArrowRight, Linkedin } from "lucide-react"
 import { motion } from "framer-motion"
 
 export default function Home() {
@@ -31,6 +31,9 @@ export default function Home() {
               </Link>
               <Link href="/tips" className="text-gray-600 hover:text-gray-900">
                 Travel Tips
+              </Link>
+              <Link href="/contact/form.tsx" className="text-gray-600 hover:text-gray-900">
+                Contact
               </Link>
             </div>
 
@@ -176,7 +179,8 @@ export default function Home() {
               { name: "Hamburg Fish Market", image: "/images/hamburg-fish-market.jpg" },
               { name: "Lübeck's Marzipan Culture", image: "/images/lubeck-marzipan.jpg" },
               { name: "Alley Culture in Lübeck", image: "/images/lubeck-alley.jpg" },
-              { name: "Lubeck Christmas Market", image: "/images/lubeck-christmas.jpg" }
+              { name: "Lubeck Christmas Market", image: "/images/lubeck-christmas.jpg" },
+              { name: "Underground culture of St-Pauli", image: "/images/stpauli.jpg" }
             ].map((experience) => (
               <motion.div
                 key={experience.name}
@@ -198,6 +202,28 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Footer */}
+      <footer className="bg-gray-100 py-8 mt-auto">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col md:flex-row justify-between items-center">
+            <div className="text-gray-600 mb-4 md:mb-0">© 2025 Saleep Shrestha. All rights reserved.</div>
+            <div className="flex items-center space-x-4">
+              <Link href="/contact" className="text-gray-600 hover:text-gray-900 transition-colors">
+                Contact
+              </Link>
+              <a
+                href="https://www.linkedin.com/in/saleepshrestha"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-600 hover:text-gray-900 transition-colors"
+              >
+                <Linkedin className="w-5 h-5" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
     </main>
   )
 }
