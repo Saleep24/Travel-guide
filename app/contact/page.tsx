@@ -10,7 +10,7 @@ export default function Contact() {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     const formData = new FormData(e.currentTarget)
-    const response = await fetch("https://formspree.io/f/your-form-id", {
+    const response = await fetch("https://formspree.io/f/mayznvpp", {
       method: "POST",
       body: formData,
       headers: {

@@ -80,16 +80,19 @@ export default function Home() {
                 city: "Lübeck",
                 description: "Medieval charm meets modern culture in this UNESCO World Heritage site",
                 image: "/images/lubeck.jpg?height=600&width=800",
+                link: "/lubeck",
               },
               {
                 city: "Hamburg",
                 description: "Harbor life, street art, and vibrant nightlife in Germany's gateway to the world",
                 image: "/images/hamburg.jpg?height=600&width=800",
+                link: "/hamburg",
               },
               {
                 city: "Berlin",
                 description: "Underground scenes, street art, and cultural revolution in the capital",
                 image: "/images/main.jpg?height=600&width=800",
+                link: "/berlin",
               },
             ].map((city) => (
               <motion.div key={city.city} className="group relative rounded-xl overflow-hidden" whileHover={{ y: -5 }}>
@@ -105,7 +108,7 @@ export default function Home() {
                     <h3 className="text-2xl font-bold text-white mb-2">{city.city}</h3>
                     <p className="text-white/90 mb-4">{city.description}</p>
                     <Link
-                      href={`/${city.city.toLowerCase()}`}
+                      href={city.link}
                       className="inline-flex items-center text-white hover:text-blue-200 transition-colors"
                     >
                       Explore more <ArrowRight className="ml-2 w-4 h-4" />
