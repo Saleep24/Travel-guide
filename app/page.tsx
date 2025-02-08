@@ -1,56 +1,97 @@
-"use client";
+"use client"
 
-import Image from "next/image";
-import Link from "next/link";
-import { Search, BookmarkPlus, Menu, ArrowRight, Linkedin } from "lucide-react";
-import { motion } from "framer-motion";
+import { useState, useEffect } from "react"
+import Image from "next/image"
+import Link from "next/link"
+import { Search, BookmarkPlus, Menu, ArrowRight, Linkedin, Instagram } from "lucide-react"
+import { motion } from "framer-motion"
 
 export default function Home() {
+  const [isScrolled, setIsScrolled] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50)
+    }
+    window.addEventListener("scroll", handleScroll)
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
+
   return (
     <main className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
       {/* Navigation */}
-      <nav className="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+      <motion.nav
+        className={`fixed w-full z-50 transition-all duration-300 ${
+          isScrolled ? "bg-white shadow-md" : "bg-transparent"
+        }`}
+        initial={{ y: -100 }}
+        animate={{ y: 0 }}
+        transition={{ duration: 0.6 }}
+      >
         <div className="container mx-auto px-4">
-          <div className="flex items-center justify-between h-16">
+          <div className="flex items-center justify-between h-20">
             <Link
               href="/"
-              className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"
+              className={`text-2xl font-bold transition-colors duration-300 ${
+                isScrolled ? "bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent" : "text-white"
+              }`}
             >
               GenZ Travel Guide
             </Link>
 
             <div className="hidden md:flex items-center space-x-8">
-              <Link href="/lubeck" className="text-gray-600 hover:text-gray-900">
+              <Link
+                href="/lubeck"
+                className={`transition-colors duration-300 ${isScrolled ? "text-gray-600 hover:text-gray-900" : "text-white hover:text-gray-200"}`}
+              >
                 Lübeck
               </Link>
-              <Link href="/hamburg" className="text-gray-600 hover:text-gray-900">
+              <Link
+                href="/hamburg"
+                className={`transition-colors duration-300 ${isScrolled ? "text-gray-600 hover:text-gray-900" : "text-white hover:text-gray-200"}`}
+              >
                 Hamburg
               </Link>
-              <Link href="/berlin" className="text-gray-600 hover:text-gray-900">
+              <Link
+                href="/berlin"
+                className={`transition-colors duration-300 ${isScrolled ? "text-gray-600 hover:text-gray-900" : "text-white hover:text-gray-200"}`}
+              >
                 Berlin
               </Link>
-              <Link href="/tips" className="text-gray-600 hover:text-gray-900">
+              <Link
+                href="/tips"
+                className={`transition-colors duration-300 ${isScrolled ? "text-gray-600 hover:text-gray-900" : "text-white hover:text-gray-200"}`}
+              >
                 Travel Tips
               </Link>
-              <Link href="/contact/form.tsx" className="text-gray-600 hover:text-gray-900">
+              <Link
+                href="/contact"
+                className={`transition-colors duration-300 ${isScrolled ? "text-gray-600 hover:text-gray-900" : "text-white hover:text-gray-200"}`}
+              >
                 Contact
               </Link>
             </div>
 
             <div className="flex items-center space-x-4">
-              <button className="p-2 hover:bg-gray-100 rounded-full">
-                <Search className="w-5 h-5" />
+              <button
+                className={`p-2 rounded-full transition-colors duration-300 ${isScrolled ? "hover:bg-gray-100" : "hover:bg-white/20"}`}
+              >
+                <Search className={`w-5 h-5 ${isScrolled ? "text-gray-600" : "text-white"}`} />
               </button>
-              <button className="p-2 hover:bg-gray-100 rounded-full">
-                <BookmarkPlus className="w-5 h-5" />
+              <button
+                className={`p-2 rounded-full transition-colors duration-300 ${isScrolled ? "hover:bg-gray-100" : "hover:bg-white/20"}`}
+              >
+                <BookmarkPlus className={`w-5 h-5 ${isScrolled ? "text-gray-600" : "text-white"}`} />
               </button>
-              <button className="md:hidden p-2 hover:bg-gray-100 rounded-full">
-                <Menu className="w-5 h-5" />
+              <button
+                className={`md:hidden p-2 rounded-full transition-colors duration-300 ${isScrolled ? "hover:bg-gray-100" : "hover:bg-white/20"}`}
+              >
+                <Menu className={`w-5 h-5 ${isScrolled ? "text-gray-600" : "text-white"}`} />
               </button>
             </div>
           </div>
         </div>
-      </nav>
+      </motion.nav>
 
       {/* Hero Section */}
       <section className="relative h-[90vh] flex items-center justify-center">
@@ -63,11 +104,10 @@ export default function Home() {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/60" />
         <div className="relative z-10 text-center text-white px-4">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">
-            Gen Z Guide to Northern Germany
-          </h1>
+          <h1 className="text-5xl md:text-6xl font-bold mb-6">Gen Z Guide to Northern Germany</h1>
           <p className="text-xl md:text-xl mb-8 max-w-2xl mx-auto">
-            Experience Lübeck, Hamburg, and Berlin through the lens of a young traveler so you too can find the top Insta spots and experience the most exciting opportunities Northern Germany has to offer
+            Experience Lübeck, Hamburg, and Berlin through the lens of a young traveler so you too can find the top
+            Insta spots and experience the most exciting opportunities Northern Germany has to offer
           </p>
         </div>
       </section>
@@ -97,11 +137,7 @@ export default function Home() {
                 link: "/berlin",
               },
             ].map((city) => (
-              <motion.div
-                key={city.city}
-                className="group relative rounded-xl overflow-hidden"
-                whileHover={{ y: -5 }}
-              >
+              <motion.div key={city.city} className="group relative rounded-xl overflow-hidden" whileHover={{ y: -5 }}>
                 <div className="aspect-[4/5] relative">
                   <Image
                     src={city.image || "/placeholder.svg"}
@@ -138,7 +174,7 @@ export default function Home() {
               { name: "Lübeck's Marzipan Culture", image: "/images/lubeck-marzipan.jpg" },
               { name: "Alley Culture in Lübeck", image: "/images/lubeck-alley.jpg" },
               { name: "Lubeck Christmas Market", image: "/images/lubeck-christmas.jpg" },
-              { name: "Underground culture of St-Pauli", image: "/images/stpauli.jpg" }
+              { name: "Underground culture of St-Pauli", image: "/images/stpauli.jpg" },
             ].map((experience) => (
               <motion.div
                 key={experience.name}
@@ -213,28 +249,51 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-100 py-8 mt-auto">
+      <footer className="bg-gray-900 text-white py-12">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="text-gray-600 mb-4 md:mb-0">
-              © 2025 Saleep Shrestha. All rights reserved.
+            <div className="mb-4 md:mb-0">
+              <h3 className="text-2xl font-bold mb-2">GenZ Travel Guide</h3>
+              <p className="text-gray-400"></p>
             </div>
-            <div className="flex items-center space-x-4">
-              <Link href="/contact" className="text-gray-600 hover:text-gray-900 transition-colors">
-                Contact
-              </Link>
-              <a
-                href="https://www.linkedin.com/in/saleepshrestha"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-600 hover:text-gray-900 transition-colors"
-              >
-                <Linkedin className="w-5 h-5" />
-              </a>
+            <div className="flex flex-col items-center md:items-end">
+              <div className="flex space-x-4 mb-4">
+                <Link href="/contact" className="text-gray-400 hover:text-white transition-colors">
+                  Contact
+                </Link>
+                <Link href="/privacy" className="text-gray-400 hover:text-white transition-colors">
+                  Privacy Policy
+                </Link>
+                <Link href="/terms" className="text-gray-400 hover:text-white transition-colors">
+                  Terms of Service
+                </Link>
+              </div>
+              <div className="flex items-center space-x-4">
+                <a
+                  href="https://www.linkedin.com/in/saleepshrestha"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  <Linkedin className="w-6 h-6" />
+                </a>
+                <a
+                  href="https://www.instagram.com/saleep.shrestha"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  <Instagram className="w-6 h-6" />
+                </a>
+              </div>
             </div>
+          </div>
+          <div className="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
+            © 2025 Saleep Shrestha. All rights reserved.
           </div>
         </div>
       </footer>
     </main>
-  );
+  )
 }
+

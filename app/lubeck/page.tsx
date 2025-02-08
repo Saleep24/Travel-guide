@@ -1,19 +1,21 @@
-"use client";
+"use client"
 
-import { useRef } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
-import Image from "next/image";
-import Link from "next/link";
-import { Linkedin } from "lucide-react";
+import { useState, useEffect } from "react"
+import { motion, useScroll, useTransform } from "framer-motion"
+import Image from "next/image"
+import Link from "next/link"
+import { Linkedin, ArrowLeft, Instagram } from "lucide-react"
 
-// ----------------------------------------------------------------------------
-// 1. HERO SECTION (Video Background)
-// ----------------------------------------------------------------------------
+// 1. HERO SECTION
 function HeroSection() {
+  const { scrollY } = useScroll()
+  const opacity = useTransform(scrollY, [0, 300], [1, 0])
+  const scale = useTransform(scrollY, [0, 300], [1, 1.2])
+
   return (
-    <section className="relative h-screen flex items-center justify-center">
-      {/* Background video */}
-      <video
+    <section className="relative h-screen flex items-center justify-center overflow-hidden">
+      <motion.video
+        style={{ scale }}
         autoPlay
         muted
         loop
@@ -22,220 +24,257 @@ function HeroSection() {
       >
         <source src="/videos/lubeck.mp4" type="video/mp4" />
         Your browser does not support the video tag.
-      </video>
-      {/* Dark overlay for readability */}
-      <div className="absolute inset-0 bg-black opacity-30"></div>
-      {/* Text content */}
-      <div className="relative z-10 text-center px-4">
-        <h1 className="text-4xl md:text-6xl font-extrabold text-white tracking-wider drop-shadow-lg">
-          Lübeck
-        </h1>
-        <p className="mt-4 text-lg md:text-2xl text-gray-200 drop-shadow-md">
+      </motion.video>
+      <motion.div style={{ opacity }} className="absolute inset-0 bg-black/50" />
+      <motion.div style={{ opacity }} className="relative z-10 text-center px-4 max-w-4xl mx-auto">
+        <motion.h1
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="text-5xl md:text-7xl font-extrabold text-white tracking-wider drop-shadow-lg mb-6"
+        >
+          Discover Lübeck
+        </motion.h1>
+        <motion.p
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+          className="text-xl md:text-3xl text-gray-200 drop-shadow-md mb-8"
+        >
           A fairy tale UNESCO World Heritage site
-        </p>
-      </div>
+        </motion.p>
+        <motion.div
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
+        >
+          <Link
+            href="#explore"
+            className="bg-white text-blue-600 px-8 py-3 rounded-full text-lg font-semibold hover:bg-blue-50 transition-colors duration-300 inline-block"
+          >
+            Explore Lübeck
+          </Link>
+        </motion.div>
+      </motion.div>
     </section>
-  );
+  )
 }
 
-// ----------------------------------------------------------------------------
-// 2. INSTAGRAM SPOTS SECTION DATA (Names, images, and descriptions)
-// ----------------------------------------------------------------------------
+// 2. INSTAGRAM SPOTS DATA
 const instaSpots = [
-  { 
-    name: "The Holsten Gate", 
-    image: "/images/Holstentor_lubeck.jpeg", 
+  {
+    name: "The Holsten Gate",
+    image: "/images/Holstentor_lubeck.jpeg",
     description:
-      "The Holsten Gate is Lübeck’s most iconic landmark, with its fairy-tale like towers and medieval charm making it a must visit photo spot. It’s as symbolic to Lübeck as the Eiffel Tower is to Paris." 
+      "The Holsten Gate is Lübeck's most iconic landmark, with its fairy-tale like towers and medieval charm making it a must visit photo spot. It's as symbolic to Lübeck as the Eiffel Tower is to Paris.",
   },
-  { 
-    name: "St. Mary's Church", 
-    image: "/images/stmary-lubeck.jpeg", 
+  {
+    name: "St. Mary's Church",
+    image: "/images/stmary-lubeck.jpeg",
     description:
-      "St. Mary’s Church is one of the most beautiful churches I’ve ever seen both inside and outside. The architecture alone makes it worth visiting, and honestly, any trip to Europe feels incomplete without visiting a historic church. Plus, there’s a student discount, so why not?" 
+      "St. Mary's Church is one of the most beautiful churches I've ever seen both inside and outside. The architecture alone makes it worth visiting, and honestly, any trip to Europe feels incomplete without visiting a historic church. Plus, there's a student discount, so why not?",
   },
-  { 
-    name: "Lübeck narrow streets", 
-    image: "/images/lubeck-streets.jpeg", 
+  {
+    name: "Lübeck narrow streets",
+    image: "/images/lubeck-streets.jpeg",
     description:
-      "Lübeck’s narrow streets look exactly like the Europe you see in pictures, stone-paved roads, cozy alleyways, and beautiful old buildings all around. Bigger cities don’t have this kind of charm, so if you’re in Northern Germany, take a walk and snap some pics for your Instagram." 
+      "Lübeck's narrow streets look exactly like the Europe you see in pictures, stone-paved roads, cozy alleyways, and beautiful old buildings all around. Bigger cities don't have this kind of charm, so if you're in Northern Germany, take a walk and snap some pics for your Instagram.",
   },
-  { 
-    name: "European Hansemuseum", 
-    image: "/images/hanse-museum.JPEG", 
+  {
+    name: "European Hansemuseum",
+    image: "/images/hanse-museum.JPEG",
     description:
-      "Look around and take pictures with old Hanseatic traders’ clothes, ornaments, and weapons on display. The best part? There’s a photo booth where you can dress up and get that classic Hanseatic vibe, especially if you're with friends. Quick tip: this is one of the highest points in Lübeck, so if you’re here on New Year’s Eve, head to the top for an amazing view of the fireworks over the harbor and city." 
+      "Look around and take pictures with old Hanseatic traders' clothes, ornaments, and weapons on display. The best part? There's a photo booth where you can dress up and get that classic Hanseatic vibe, especially if you're with friends. Quick tip: this is one of the highest points in Lübeck, so if you're here on New Year's Eve, head to the top for an amazing view of the fireworks over the harbor and city.",
   },
-  { 
-    name: "Baltic Sea", 
-    image: "/images/baltic-sea.jpeg", 
+  {
+    name: "Baltic Sea",
+    image: "/images/baltic-sea.jpeg",
     description:
-      "If you’re in Northern Germany, don’t miss the Baltic Sea, less than a 30 minute drive from Lübeck. It’s the closest sea to Northern Germany, where you can see ships, old pirate ships, lighthouses, and even stop by marzipan shops." 
+      "If you're in Northern Germany, don't miss the Baltic Sea, less than a 30 minute drive from Lübeck. It's the closest sea to Northern Germany, where you can see ships, old pirate ships, lighthouses, and even stop by marzipan shops.",
   },
-];
+]
 
-// ----------------------------------------------------------------------------
-// 3. ANIMATED IMAGE COMPONENT (Vertical animation)
-// ----------------------------------------------------------------------------
-type SectionImageProps = {
-  section: { title: string; image: string };
-  index: number;
-  total: number;
-  scrollYProgress: any;
-};
-
-function SectionImage({
-  section,
-  index,
-  total,
-  scrollYProgress,
-}: SectionImageProps) {
-  // Calculate scroll range for this section
-  const start = index / total;
-  const end = (index + 1) / total;
-
-  // Vertical parallax: image comes up from 50px to -50px while fading in/out
-  const opacity = useTransform(
-    scrollYProgress,
-    [start, (start + end) / 2, end],
-    [0, 1, 0]
-  );
-  const scale = useTransform(
-    scrollYProgress,
-    [start, (start + end) / 2, end],
-    [0.9, 1, 0.9]
-  );
-  const y = useTransform(
-    scrollYProgress,
-    [start, (start + end) / 2, end],
-    ["50px", "0px", "-50px"]
-  );
+// 3. TIMELINE ITEM COMPONENT
+function TimelineItem({ spot, index }: { spot: any; index: number }) {
+  const isLeft = index % 2 === 0
 
   return (
-    <motion.div className="absolute inset-0" style={{ opacity, scale, y }}>
-      <Image
-        src={section.image}
-        alt={section.title}
-        fill
-        className="object-cover"
+    <div className="relative min-h-screen flex items-center py-20">
+      <div className="container mx-auto px-4">
+        <div className={`flex flex-col lg:flex-row gap-12 ${isLeft ? "lg:flex-row" : "lg:flex-row-reverse"}`}>
+          {/* Image Section */}
+          <motion.div
+            className="lg:w-1/2 relative h-96 lg:h-[600px] rounded-3xl overflow-hidden shadow-2xl"
+            initial={{ opacity: 0, x: isLeft ? -100 : 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <Image src={spot.image || "/placeholder.svg"} alt={spot.name} fill className="object-cover" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+            <div className="absolute bottom-6 left-6 flex items-center text-white">
+              <Instagram className="w-6 h-6 mr-2" />
+              <span className="text-lg font-semibold">Saleep.Shrestha</span>
+            </div>
+          </motion.div>
+
+          {/* Text Section */}
+          <motion.div
+            className="lg:w-1/2 flex items-center"
+            initial={{ opacity: 0, x: isLeft ? 100 : -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            viewport={{ once: true }}
+          >
+            <div
+              className={`bg-white/90 backdrop-blur-sm p-8 lg:p-12 rounded-2xl shadow-xl border border-gray-100 ${
+                isLeft ? "lg:ml-12" : "lg:mr-12"
+              }`}
+            >
+              <h3 className="text-3xl lg:text-4xl font-bold mb-6 text-gray-900">{spot.name}</h3>
+              <p className="text-lg text-gray-700 leading-relaxed">{spot.description}</p>
+            </div>
+          </motion.div>
+        </div>
+      </div>
+
+      {/* Timeline Dot */}
+      <motion.div
+        className={`absolute top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-blue-600 border-4 border-white shadow-xl z-10 ${
+          isLeft ? "right-[calc(50%-1rem)]" : "left-[calc(50%-1rem)]"
+        }`}
+        initial={{ scale: 0 }}
+        whileInView={{ scale: 1 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
       />
-      {/* Optional creative overlay */}
-      <div className="absolute inset-0 bg-black opacity-30 mix-blend-overlay" />
-    </motion.div>
-  );
+    </div>
+  )
 }
 
-// ----------------------------------------------------------------------------
 // 4. MAIN COMPONENT
-// ----------------------------------------------------------------------------
-export default function LubeckParallelScroll() {
-  // Ref & scroll progress for the Instagram spots section
-  const instaScrollRef = useRef<HTMLDivElement>(null);
-  const { scrollYProgress: instaScrollYProgress } = useScroll({
-    target: instaScrollRef,
-  });
+export default function LubeckTimeline() {
+  const [isScrolled, setIsScrolled] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50)
+    }
+    window.addEventListener("scroll", handleScroll)
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
 
   return (
     <>
-      {/* NAVBAR */}
-      <nav className="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+      {/* Navbar */}
+      <motion.nav
+        className={`fixed w-full z-50 transition-all duration-300 ${
+          isScrolled ? "bg-white shadow-md" : "bg-transparent"
+        }`}
+        initial={{ y: -100 }}
+        animate={{ y: 0 }}
+        transition={{ duration: 0.6 }}
+      >
         <div className="container mx-auto px-4">
-          <div className="flex items-center justify-between h-16">
+          <div className="flex items-center justify-between h-20">
             <Link
               href="/"
-              className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"
+              className={`text-2xl font-bold transition-colors duration-300 ${
+                isScrolled ? "bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent" : "text-white"
+              }`}
             >
               GenZ Travel Guide
             </Link>
-            <div>
-              <Link
-                href="/"
-                className="px-4 py-2 bg-blue-500 text-white rounded-full text-lg font-medium shadow hover:bg-blue-600 transition-colors"
-              >
+            <Link
+              href="/"
+              className={`px-6 py-2 rounded-full text-lg font-medium transition-all duration-300 ${
+                isScrolled
+                  ? "bg-blue-600 text-white hover:bg-blue-700"
+                  : "bg-white/20 text-white backdrop-blur-sm hover:bg-white/30"
+              }`}
+            >
+              <span className="flex items-center">
+                <ArrowLeft className="w-5 h-5 mr-2" />
                 Back to Home
-              </Link>
-            </div>
+              </span>
+            </Link>
           </div>
         </div>
-      </nav>
+      </motion.nav>
 
-      {/* MAIN CONTENT */}
-      <main className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
-        {/* HERO SECTION */}
+      {/* Main Content */}
+      <main className="bg-gradient-to-b from-gray-50 to-white">
         <HeroSection />
 
-        {/* INSTAGRAM SPOTS Parallel Scrolling Section */}
-        <section ref={instaScrollRef} className="relative pt-16">
-          <div className="text-center mb-8">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
-              Must visit Instagram Spots
-            </h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2">
-            {/* Left Column: Sticky Animated Images for Instagram Spots */}
-            <div className="relative h-screen sticky top-16 overflow-hidden">
-              {instaSpots.map((spot, i) => (
-                <SectionImage
-                  key={i}
-                  section={{ title: spot.name, image: spot.image }}
-                  index={i}
-                  total={instaSpots.length}
-                  scrollYProgress={instaScrollYProgress}
-                />
-              ))}
-            </div>
-            {/* Right Column: Scrolling Names and Descriptions */}
-            <div className="space-y-16 md:space-y-32 p-4 md:p-16">
-              {instaSpots.map((spot, i) => (
-                <div key={i} className="min-h-screen flex flex-col justify-center">
-                  <motion.h2
-                    className="text-3xl md:text-4xl font-extrabold tracking-wide text-gray-900"
-                    initial={{ opacity: 0, y: 50 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, ease: "easeOut" }}
-                    viewport={{ once: true, amount: 0.5 }}
-                  >
-                    {spot.name}
-                  </motion.h2>
-                  <motion.p
-                    className="mt-2 text-base md:text-lg text-gray-700"
-                    initial={{ opacity: 0, y: 50 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-                    viewport={{ once: true, amount: 0.5 }}
-                  >
-                    {spot.description}
-                  </motion.p>
-                </div>
-              ))}
-            </div>
+        {/* Timeline Section */}
+        <section id="explore" className="relative pt-20">
+          <motion.h2
+            className="text-4xl md:text-6xl font-bold text-center py-20 text-gray-900"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            Must Visit Instagram Spots
+          </motion.h2>
+
+          <div className="relative pb-32">
+            {/* Timeline vertical line */}
+            <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-gray-200 transform -translate-x-1/2 z-0" />
+
+            {instaSpots.map((spot, index) => (
+              <TimelineItem key={index} spot={spot} index={index} />
+            ))}
           </div>
         </section>
 
-        {/* FOOTER */}
-        <footer className="bg-gray-100 py-8 mt-auto">
+        {/* Footer */}
+        <footer className="bg-gray-900 text-white py-12">
           <div className="container mx-auto px-4">
             <div className="flex flex-col md:flex-row justify-between items-center">
-              <div className="text-gray-600 mb-4 md:mb-0">
-                © 2025 Saleep Shrestha. All rights reserved.
+              <div className="mb-4 md:mb-0">
+                <h3 className="text-2xl font-bold mb-2">GenZ Travel Guide</h3>
+                <p className="text-gray-400"></p>
               </div>
-              <div className="flex items-center space-x-4">
-                <Link href="/contact" className="text-gray-600 hover:text-gray-900 transition-colors">
-                  Contact
-                </Link>
-                <a
-                  href="https://www.linkedin.com/in/saleepshrestha"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-600 hover:text-gray-900 transition-colors"
-                >
-                  <Linkedin className="w-5 h-5" />
-                </a>
+              <div className="flex flex-col items-center md:items-end">
+                <div className="flex space-x-4 mb-4">
+                  <Link href="/contact" className="text-gray-400 hover:text-white transition-colors">
+                    Contact
+                  </Link>
+                  <Link href="/privacy" className="text-gray-400 hover:text-white transition-colors">
+                    Privacy Policy
+                  </Link>
+                  <Link href="/terms" className="text-gray-400 hover:text-white transition-colors">
+                    Terms of Service
+                  </Link>
+                </div>
+                <div className="flex items-center space-x-4">
+                  <a
+                    href="https://www.linkedin.com/in/saleepshrestha"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-400 hover:text-white transition-colors"
+                  >
+                    <Linkedin className="w-6 h-6" />
+                  </a>
+                  <a
+                    href="https://www.instagram.com/saleep.shrestha"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-400 hover:text-white transition-colors"
+                  >
+                    <Instagram className="w-6 h-6" />
+                  </a>
+                </div>
               </div>
+            </div>
+            <div className="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
+              © 2025 Saleep Shrestha. All rights reserved.
             </div>
           </div>
         </footer>
       </main>
     </>
-  );
+  )
 }
+
