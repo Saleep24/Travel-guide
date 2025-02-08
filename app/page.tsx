@@ -1,9 +1,9 @@
-"use client"
+"use client";
 
-import Image from "next/image"
-import Link from "next/link"
-import { Search, BookmarkPlus, Menu, ArrowRight, Linkedin } from "lucide-react"
-import { motion } from "framer-motion"
+import Image from "next/image";
+import Link from "next/link";
+import { Search, BookmarkPlus, Menu, ArrowRight, Linkedin } from "lucide-react";
+import { motion } from "framer-motion";
 
 export default function Home() {
   return (
@@ -63,17 +63,19 @@ export default function Home() {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/60" />
         <div className="relative z-10 text-center text-white px-4">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6">Gen Z Guide to Northern Germany</h1>
-          <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
-            Experience Lübeck, Hamburg, and Berlin through the lens of a young traveler
+          <h1 className="text-5xl md:text-6xl font-bold mb-6">
+            Gen Z Guide to Northern Germany
+          </h1>
+          <p className="text-xl md:text-xl mb-8 max-w-2xl mx-auto">
+            Experience Lübeck, Hamburg, and Berlin through the lens of a young traveler so you too can find the top Insta spots and experience the most exciting opportunities Northern Germany has to offer
           </p>
         </div>
       </section>
 
-      {/* Cities Section */}
-      <section className="py-20 px-4">
+      {/* Post Worthy Insta Spots Section */}
+      <section className="pt-32 pb-20 px-4">
         <div className="container mx-auto">
-          <h2 className="text-3xl font-bold mb-12 text-center">Explore Cities</h2>
+          <h2 className="text-4xl font-bold mb-12 text-center">Post Worthy Insta Spots</h2>
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
@@ -95,7 +97,11 @@ export default function Home() {
                 link: "/berlin",
               },
             ].map((city) => (
-              <motion.div key={city.city} className="group relative rounded-xl overflow-hidden" whileHover={{ y: -5 }}>
+              <motion.div
+                key={city.city}
+                className="group relative rounded-xl overflow-hidden"
+                whileHover={{ y: -5 }}
+              >
                 <div className="aspect-[4/5] relative">
                   <Image
                     src={city.image || "/placeholder.svg"}
@@ -121,10 +127,44 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Tech Tips Section */}
+      {/* Must-Try Experiences Section */}
+      <section className="py-20 px-4">
+        <div className="container mx-auto">
+          <h2 className="text-4xl font-bold mb-12 text-center">Must-Try Experiences</h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            {[
+              { name: "Street Art Tours in Berlin", image: "/images/berlin-street-art.PNG" },
+              { name: "Hamburg Fish Market", image: "/images/hamburg-fish-market.jpg" },
+              { name: "Lübeck's Marzipan Culture", image: "/images/lubeck-marzipan.jpg" },
+              { name: "Alley Culture in Lübeck", image: "/images/lubeck-alley.jpg" },
+              { name: "Lubeck Christmas Market", image: "/images/lubeck-christmas.jpg" },
+              { name: "Underground culture of St-Pauli", image: "/images/stpauli.jpg" }
+            ].map((experience) => (
+              <motion.div
+                key={experience.name}
+                className="relative h-64 rounded-xl overflow-hidden"
+                whileHover={{ scale: 1.02 }}
+              >
+                <Image
+                  src={experience.image || "/placeholder.svg"}
+                  alt={experience.name}
+                  fill
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                <div className="absolute bottom-0 left-0 p-6">
+                  <h3 className="text-xl font-semibold text-white">{experience.name}</h3>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Gen Z Travel Tips Section */}
       <section className="py-20 px-4 bg-gradient-to-r from-blue-500/5 via-purple-500/5 to-pink-500/5">
         <div className="container mx-auto">
-          <h2 className="text-3xl font-bold mb-12 text-center">Gen Z Travel Tips</h2>
+          <h2 className="text-4xl font-bold mb-12 text-center">Gen Z Travel Tips</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
@@ -172,45 +212,13 @@ export default function Home() {
         </div>
       </section>
 
-{/* Featured Experiences */}
-<section className="py-20 px-4">
-        <div className="container mx-auto">
-          <h2 className="text-3xl font-bold mb-12 text-center">Must-Try Experiences</h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            {[
-              { name: "Street Art Tours in Berlin", image: "/images/berlin-street-art.PNG" },
-              { name: "Hamburg Fish Market", image: "/images/hamburg-fish-market.jpg" },
-              { name: "Lübeck's Marzipan Culture", image: "/images/lubeck-marzipan.jpg" },
-              { name: "Alley Culture in Lübeck", image: "/images/lubeck-alley.jpg" },
-              { name: "Lubeck Christmas Market", image: "/images/lubeck-christmas.jpg" },
-              { name: "Underground culture of St-Pauli", image: "/images/stpauli.jpg" }
-            ].map((experience) => (
-              <motion.div
-                key={experience.name}
-                className="relative h-64 rounded-xl overflow-hidden"
-                whileHover={{ scale: 1.02 }}
-              >
-                <Image
-                  src={experience.image || "/placeholder.svg"}
-                  alt={experience.name}
-                  fill
-                  className="object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                <div className="absolute bottom-0 left-0 p-6">
-                  <h3 className="text-xl font-semibold text-white">{experience.name}</h3>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Footer */}
       <footer className="bg-gray-100 py-8 mt-auto">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="text-gray-600 mb-4 md:mb-0">© 2025 Saleep Shrestha. All rights reserved.</div>
+            <div className="text-gray-600 mb-4 md:mb-0">
+              © 2025 Saleep Shrestha. All rights reserved.
+            </div>
             <div className="flex items-center space-x-4">
               <Link href="/contact" className="text-gray-600 hover:text-gray-900 transition-colors">
                 Contact
@@ -228,6 +236,5 @@ export default function Home() {
         </div>
       </footer>
     </main>
-  )
+  );
 }
-

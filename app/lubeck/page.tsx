@@ -223,7 +223,7 @@ export default function LubeckParallelScroll() {
         {/* INSTAGRAM SPOTS Parallel Scrolling Section */}
         <section ref={instaScrollRef} className="relative pt-16">
           <div className="text-center mb-8">
-            <h2 className="text-5xl font-bold text-gray-900">Instagram Spots</h2>
+            <h2 className="text-5xl font-bold text-gray-900">Must visit Instagram Spots</h2>
           </div>
           <div className="grid grid-cols-2">
             {/* Left Column: Sticky Animated Images for Instagram Spots */}
