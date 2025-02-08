@@ -26,10 +26,10 @@ function HeroSection() {
       <div className="absolute inset-0 bg-black opacity-40"></div>
       {/* Text content */}
       <div className="relative z-10 text-center px-4">
-        <h1 className="text-6xl md:text-6xl font-extrabold text-white tracking-wider drop-shadow-lg">
+        <h1 className="text-4xl md:text-6xl font-extrabold text-white tracking-wider drop-shadow-lg">
           Lübeck
         </h1>
-        <p className="mt-4 text-2xl md:text-2xl text-gray-200 drop-shadow-md">
+        <p className="mt-4 text-lg md:text-2xl text-gray-200 drop-shadow-md">
           A fairy tale UNESCO World Heritage site
         </p>
       </div>
@@ -38,38 +38,7 @@ function HeroSection() {
 }
 
 // ----------------------------------------------------------------------------
-// 2. LANDMARKS SECTION DATA (Draft descriptions)
-// ----------------------------------------------------------------------------
-const landmarks = [
-  {
-    title: "Holstentor",
-    description: "The iconic city gate and symbol of Lübeck. Holstentor is a grand red-brick gate, standing strong since the 1400s. Walk up close, and you’ll see carvings telling stories of old traders and battles. Inside, a small museum shows off ancient Hanseatic trade link, its power and wealth. At dusk, the gate glows golden over its moat. Snap a photo here; it’s the Lübeck postcard moment.",
-    image: "/images/lubeck.jpg",
-  },
-  {
-    title: "St. Mary's Church",
-    description: "A masterpiece of brick Gothic architecture.",
-    image: "/images/stmary-lubeck.jpeg",
-  },
-  {
-    title: "Buddenbrookhaus",
-    description: "Dedicated to the famous Mann family of writers.",
-    image: "/images/book.jpg",
-  },
-  {
-    title: "Niederegger Marzipan",
-    description: "Taste the city's famous sweet treat.",
-    image: "/images/lubeck-marzipan.jpg",
-  },
-  {
-    title: "Baltic Sea",
-    description: "Enjoy the Baltic Sea beach.",
-    image: "/images/baltic-sea.jpg",
-  },
-];
-
-// ----------------------------------------------------------------------------
-// 3. INSTAGRAM SPOTS SECTION DATA (Names & images only)
+// 2. INSTAGRAM SPOTS SECTION DATA (Names & images only)
 // ----------------------------------------------------------------------------
 const instaSpots = [
   { name: "St. Mary's Church", image: "/images/insta1.jpg" },
@@ -80,7 +49,7 @@ const instaSpots = [
 ];
 
 // ----------------------------------------------------------------------------
-// 4. ANIMATED IMAGE COMPONENT (Vertical animation)
+// 3. ANIMATED IMAGE COMPONENT (Vertical animation)
 // ----------------------------------------------------------------------------
 type SectionImageProps = {
   section: { title: string; image: string };
@@ -131,14 +100,10 @@ function SectionImage({
 }
 
 // ----------------------------------------------------------------------------
-// 5. MAIN COMPONENT
+// 4. MAIN COMPONENT
 // ----------------------------------------------------------------------------
 export default function LubeckParallelScroll() {
-  // Ref & scroll progress for landmarks section
-  const landmarksScrollRef = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({ target: landmarksScrollRef });
-
-  // Ref & scroll progress for Instagram spots section
+  // Ref & scroll progress for the Instagram spots section
   const instaScrollRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress: instaScrollYProgress } = useScroll({
     target: instaScrollRef,
@@ -173,59 +138,14 @@ export default function LubeckParallelScroll() {
         {/* HERO SECTION */}
         <HeroSection />
 
-        {/* LANDMARKS Parallel Scrolling Section */}
-        <section ref={landmarksScrollRef} className="relative pt-16">
-          <div className="grid grid-cols-2">
-            {/* Left Column: Sticky Animated Images */}
-            <div className="relative h-screen sticky top-16 overflow-hidden">
-              {landmarks.map((landmark, i) => (
-                <SectionImage
-                  key={i}
-                  section={{ title: landmark.title, image: landmark.image }}
-                  index={i}
-                  total={landmarks.length}
-                  scrollYProgress={scrollYProgress}
-                />
-              ))}
-            </div>
-            {/* Right Column: Scrolling Text with Title & Draft Description */}
-            <div className="space-y-32 p-16">
-              {landmarks.map((landmark, i) => (
-                <div key={i} className="min-h-screen flex flex-col justify-center">
-                  <motion.h2
-                    className="text-6xl font-extrabold mb-4 tracking-wide text-gray-900"
-                    initial={{ opacity: 0, y: 50 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, ease: "easeOut" }}
-                    viewport={{ once: true, amount: 0.5 }}
-                  >
-                    {landmark.title}
-                  </motion.h2>
-                  <motion.p
-                    className="text-2xl max-w-lg leading-relaxed text-gray-700"
-                    initial={{ opacity: 0, y: 50 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{
-                      duration: 0.8,
-                      ease: "easeOut",
-                      delay: 0.2,
-                    }}
-                    viewport={{ once: true, amount: 0.5 }}
-                  >
-                    {landmark.description}
-                  </motion.p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
         {/* INSTAGRAM SPOTS Parallel Scrolling Section */}
         <section ref={instaScrollRef} className="relative pt-16">
           <div className="text-center mb-8">
-            <h2 className="text-5xl font-bold text-gray-900">Must visit Instagram Spots</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
+              Must visit Instagram Spots
+            </h2>
           </div>
-          <div className="grid grid-cols-2">
+          <div className="grid grid-cols-1 md:grid-cols-2">
             {/* Left Column: Sticky Animated Images for Instagram Spots */}
             <div className="relative h-screen sticky top-16 overflow-hidden">
               {instaSpots.map((spot, i) => (
@@ -239,11 +159,11 @@ export default function LubeckParallelScroll() {
               ))}
             </div>
             {/* Right Column: Scrolling Names Only */}
-            <div className="space-y-32 p-16">
+            <div className="space-y-16 md:space-y-32 p-4 md:p-16">
               {instaSpots.map((spot, i) => (
                 <div key={i} className="min-h-screen flex flex-col justify-center">
                   <motion.h2
-                    className="text-6xl font-extrabold tracking-wide text-gray-900"
+                    className="text-3xl md:text-5xl font-extrabold tracking-wide text-gray-900"
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, ease: "easeOut" }}
@@ -258,9 +178,9 @@ export default function LubeckParallelScroll() {
         </section>
 
         {/* CONTACT CALL-TO-ACTION SECTION */}
-        <section className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-b from-gray-50 to-white">
+        <section className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-b from-gray-50 to-white px-4">
           <motion.h2
-            className="text-5xl font-bold mb-6 tracking-tight text-gray-900"
+            className="text-4xl md:text-5xl font-bold mb-6 tracking-tight text-gray-900"
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
@@ -270,7 +190,7 @@ export default function LubeckParallelScroll() {
           </motion.h2>
           <Link
             href="/contact"
-            className="px-10 py-4 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full text-xl font-medium text-white shadow-lg hover:shadow-xl transition-all duration-300"
+            className="px-6 py-3 md:px-10 md:py-4 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full text-lg md:text-xl font-medium text-white shadow-lg hover:shadow-xl transition-all duration-300"
           >
             Contact Us
           </Link>
