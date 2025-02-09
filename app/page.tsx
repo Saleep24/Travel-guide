@@ -169,7 +169,11 @@ export default function Home() {
           <h2 className="text-4xl font-bold mb-12 text-center">Must-Try Experiences</h2>
           <div className="grid md:grid-cols-2 gap-8">
             {[
-              { name: "Street Art Tours in Berlin", image: "/images/berlin-street-art.PNG" },
+              {
+                name: "Street Art Tours in Berlin",
+                image: "/images/berlin-street-art.PNG",
+                link: "/experiences/street-art-berlin",
+              },
               { name: "Hamburg Fish Market", image: "/images/hamburg-fish-market.jpg" },
               { name: "Lübeck's Marzipan Culture", image: "/images/lubeck-marzipan.jpg" },
               { name: "Alley Culture in Lübeck", image: "/images/lubeck-alley.jpg" },
@@ -181,16 +185,18 @@ export default function Home() {
                 className="relative h-64 rounded-xl overflow-hidden"
                 whileHover={{ scale: 1.02 }}
               >
-                <Image
-                  src={experience.image || "/placeholder.svg"}
-                  alt={experience.name}
-                  fill
-                  className="object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                <div className="absolute bottom-0 left-0 p-6">
-                  <h3 className="text-xl font-semibold text-white">{experience.name}</h3>
-                </div>
+                <Link href={experience.link || "#"}>
+                  <Image
+                    src={experience.image || "/placeholder.svg"}
+                    alt={experience.name}
+                    fill
+                    className="object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                  <div className="absolute bottom-0 left-0 p-6">
+                    <h3 className="text-xl font-semibold text-white">{experience.name}</h3>
+                  </div>
+                </Link>
               </motion.div>
             ))}
           </div>
@@ -254,7 +260,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-4 md:mb-0">
               <h3 className="text-2xl font-bold mb-2">GenZ Travel Guide</h3>
-              <p className="text-gray-400"></p>
+              <p className="text-gray-400">Exploring the world, one city at a time.</p>
             </div>
             <div className="flex flex-col items-center md:items-end">
               <div className="flex space-x-4 mb-4">
@@ -278,7 +284,7 @@ export default function Home() {
                   <Linkedin className="w-6 h-6" />
                 </a>
                 <a
-                  href="https://www.instagram.com/saleep.shrestha"
+                  href="https://www.instagram.com/genz_travel_guide"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-white transition-colors"
