@@ -66,31 +66,37 @@ const instaSpots = [
     name: "Elbphilharmonie",
     image: "/images/glass-house-concert.jpeg",
     description:
-      "The Elbphilharmonie is Hamburg's new landmark and a must visit spot. This stunning concert hall offers breathtaking views of the city and harbor. Don't miss the chance to take a pic on the Plaza, it's free to visit and the view is absolutely Instagram worthy!",
+      "You absolutely can't miss the Elbphilharmonie when you're in Hamburg, it's the city's new landmark, and trust me, it will blow you away. The concert hall's wave-like glass facade and futuristic design make it stand out on the harbor skyline. Definitely take the trip to the Plaza (it's free!), because the panoramic views of the city and the Elbe River are insane. Perfect spot for an epic photo, and you'll be talking about the views for days!",
   },
   {
     name: "Speicherstadt",
     image: "/images/warehouse-district-hamburg.jpeg",
     description:
-      "The Speicherstadt is the largest warehouse district in the world and a UNESCO World Heritage site. With its red-brick Gothic architecture and network of canals, it's a photographer's dream. Visit during sunset for the most magical light and reflections on the water.",
+      "Speicherstadt is probably one of the coolest places you eill visit in Hamburg. It is the largest warehouse district in the world and a UNESCO World Heritage site. The red brick buildings and cute canals look like something straight out of a fairy tale, and trust me it's hard to take a bad photo here. ",
   },
   {
     name: "Reeperbahn",
     image: "/images/reeperbahn.JPG",
     description:
-      "Known as the 'most sinful mile', the Reeperbahn is Hamburg's famous entertainment district. While it's known for its nightlife, it's also great for street photography during the day. Capture the neon signs, street art, and vibrant atmosphere for a edgy addition to your feed.",
+      "You seriously can't miss the Reeperbahn when you're in Hamburg, it's the city's ultimate nightlife hotspot, and trust me, it'll leave you buzzing. This legendary street is full with neon lights, vibrant bars, and edgy street art, making it a perfect spots for some seriously epic photos. And here's a quick tip: if you're curious about checking out the one and only street open exclusively to males, make sure you look up the opening hours (because it opens from 6 pm only). Oh, and while you're there, don't forget to visit to Boutique Bizarre, the largest sex shop in Europe, right on the Reeperbahn.",
   },
   {
-    name: "Alster Lakes",
-    image: "/images/alster-hamburg.jpg",
+    name: "St. Nikolia Mermorial",
+    image: "/images/st-nikolia-hamburg.jpeg",
     description:
-      "The Inner and Outer Alster lakes are the green heart of Hamburg. Rent a paddleboat for unique shots of the city skyline, or capture the swans and sailboats that dot the lakes. In autumn, the surrounding trees turn golden, creating a stunning backdrop.",
+      "If you're in Hamburg, you have to check out St. Nikolai Memorial, it’s one of the best spots for a breathtaking city view. This place has a deep history, as it was heavily bombed during WWII, and now stands as a hauntingly beautiful reminder of the past. The real highlight? Taking the glass elevator up to the viewing platform. The panoramic view of Hamburg from up there is absolutely unreal, especially on a moody, rainy day when the city lights reflect off the wet streets.",
   },
   {
-    name: "St. Pauli Piers",
-    image: "/images/stpauli-piers-hamburg.jpg",
+    name: "Planten un Blomen",
+    image: "/images/planted-un-me.jpeg",
     description:
-      "The St. Pauli Piers offer the best views of Hamburg's port. Capture the massive container ships, the historic Rickmer Rickmers sailing ship, or the bustling fish market on Sunday mornings. For a unique shot, visit during the Hamburg DOM, when you can capture the ferris wheel lit up at night.",
+      "Okay, real talk, Planten un Blomen is magical in winter. I went when the ponds were totally frozen, and it looked like a scene from Frozen. The Japanese garden gets this quiet, almost mystical vibe with frost covered trees. Even without flowers, the frozen ponds and empty benches give off major ‘moody aesthetic’ energy. Pro tip: Bring a thermos of hot chocolate, snap a pic of your reflection in the ice, and pretend you’re in a Nordic indie film.",
+  },
+  {
+    name: "Rathaus (Town House)",
+    image: "/images/rathaus.jpeg",
+    description:
+      "You absolutely can't miss the Rathaus when you're in Hamburg, and trust me, the inside is even more stunning than the outside. Once you step in, you'll be blown away by its elegant interiors and historic details. Be sure to head upstairs, where you'll capture that (European vibe) with epic photo spots.",
   },
 ]
 
