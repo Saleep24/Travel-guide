@@ -64,19 +64,19 @@ function HeroSection() {
 const instaSpots = [
   {
     name: "Elbphilharmonie",
-    image: "/images/elbphilharmonie-hamburg.jpg",
+    image: "/images/glass-house-concert.jpeg",
     description:
-      "The Elbphilharmonie is Hamburg's new landmark and a must-visit spot. This stunning concert hall offers breathtaking views of the city and harbor. Don't miss the chance to snap a pic on the Plaza, it's free to visit and the view is absolutely Instagram-worthy!",
+      "The Elbphilharmonie is Hamburg's new landmark and a must visit spot. This stunning concert hall offers breathtaking views of the city and harbor. Don't miss the chance to take a pic on the Plaza, it's free to visit and the view is absolutely Instagram worthy!",
   },
   {
     name: "Speicherstadt",
-    image: "/images/speicherstadt-hamburg.jpg",
+    image: "/images/warehouse-district-hamburg.jpeg",
     description:
       "The Speicherstadt is the largest warehouse district in the world and a UNESCO World Heritage site. With its red-brick Gothic architecture and network of canals, it's a photographer's dream. Visit during sunset for the most magical light and reflections on the water.",
   },
   {
     name: "Reeperbahn",
-    image: "/images/reeperbahn-hamburg.jpg",
+    image: "/images/reeperbahn.JPG",
     description:
       "Known as the 'most sinful mile', the Reeperbahn is Hamburg's famous entertainment district. While it's known for its nightlife, it's also great for street photography during the day. Capture the neon signs, street art, and vibrant atmosphere for a edgy addition to your feed.",
   },
