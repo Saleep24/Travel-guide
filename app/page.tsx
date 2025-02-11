@@ -109,6 +109,13 @@ export default function Home() {
             Experience Lübeck, Hamburg, and Berlin through the lens of a young traveler so you too can find the top
             Insta spots and experience the most exciting opportunities Northern Germany has to offer
           </p>
+          <Link
+            href="/contact"
+            className="inline-flex items-center px-6 py-3 text-lg font-medium text-white bg-white/20 backdrop-blur-sm rounded-full hover:bg-white/30 transition-all duration-300"
+          >
+            Know More About Me
+            <ArrowRight className="w-5 h-5 ml-2" />
+          </Link>
         </div>
       </section>
 
