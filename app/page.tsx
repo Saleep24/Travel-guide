@@ -179,10 +179,26 @@ export default function Home() {
                 image: "/images/hamburg-fish-market.jpg",
                 link: "/experiences/hamburg-fish-market"
               },
-              { name: "Harbor Boat Trip", image: "/images/harbor-boat.JPEG" },
-              { name: "Alley Culture in Lübeck", image: "/images/lubeck-alley.jpg" },
-              { name: "Lubeck Christmas Market", image: "/images/lubeck-christmas.jpg" },
-              { name: "Underground Culture of St-Pauli", image: "/images/stpauli.jpg" },
+              { 
+                name: "Harbor Boat Trip", 
+                image: "/images/harbor-boat.JPEG",
+                link: "/experiences/harbor-boat-trip"
+              },
+              { 
+                name: "Alley Culture in Lübeck", 
+                image: "/images/lubeck-alley.jpg",
+                link: "/experiences/lubeck-alley-culture"
+              },
+              { 
+                name: "Lubeck Christmas Market", 
+                image: "/images/lubeck-christmas.jpg",
+                link: "/experiences/lubeck-christmas-market"
+              },
+              { 
+                name: "Underground Culture of St-Pauli", 
+                image: "/images/stpauli.jpg",
+                link: "/experiences/stpauli-underground"
+              },
             ].map((experience) => (
               <motion.div
                 key={experience.name}
