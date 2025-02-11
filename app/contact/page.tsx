@@ -3,7 +3,8 @@
 import { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowLeft } from "lucide-react"
+import { ArrowLeft, Send, Linkedin, Instagram } from "lucide-react"
+import { motion } from "framer-motion"
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false)
@@ -30,96 +31,133 @@ export default function Contact() {
           <ArrowLeft className="w-5 h-5 mr-2" />
           Back to Home
         </Link>
-        <h1 className="text-4xl font-bold mb-8 text-center">Contact Us</h1>
 
-        <div className="max-w-2xl mx-auto mb-12">
-          <div className="flex flex-col md:flex-row items-center md:items-start gap-8 mb-8">
-            <Image
-              src="/images/saleep-profile.jpeg"
-              alt="Saleep Shrestha"
-              width={300}
-              height={200}
-              className="rounded-lg shadow-md"
-            />
-            <div>
-              <h2 className="text-2xl font-bold mb-4">Hello everyone, I'm Saleep</h2>
-              <p className="text-gray-700 mb-4">
-                I'm a Computer Science sophomore studying at the University of Southern Mississippi. I went to Germany
-                in Winter 2024 with my honors class from the University of Southern Mississippi, organized by Study
-                Abroad USM and the Honors College.
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="bg-white shadow-xl rounded-lg overflow-hidden max-w-4xl mx-auto"
+        >
+          <div className="md:flex">
+            <div className="md:w-1/2 p-8 bg-gradient-to-br from-blue-500 to-purple-600 text-white">
+              <h1 className="text-4xl font-bold mb-6">Get in Touch</h1>
+              <p className="mb-4">
+                Have questions about my Gen Z travel experiences in Northern Germany? Want to share your own stories?
+                I'd love to hear from you!
               </p>
-              <p className="text-gray-700 mb-4">
-                This site serves as the one and only Gen Z guide to Northern Germany, where I (Generation Z) explored
-                Lübeck, Hamburg, and other parts of Germany through a program designed by non-Gen Z (Millennials,
-                Generation X, and Baby Boomers).
-              </p>
-              <p className="text-gray-700 mb-4">
-                If you have any more questions, feel free to reach out to me through the form below! Also, if you want
-                to see more content from me, here is my{" "}
+
+              <div className="mb-8">
+                <h2 className="text-2xl font-semibold mb-4">Hello, I'm Saleep</h2>
+                <Image
+                  src="/images/saleep-profile.jpeg"
+                  alt="Saleep Shrestha"
+                  width={300}
+                  height={200}
+                  className="rounded-lg shadow-md mb-4"
+                />
+                <p className="text-sm">
+                  Computer Science sophomore at the University of Southern Mississippi. I explored Germany in Winter
+                  2024 with my honors class, bringing you the ultimate Gen Z guide to Northern Germany!
+                </p>
+              </div>
+
+              <div>
                 <a
                   href="https://your-portfolio-url.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-600 hover:underline"
+                  className="text-white hover:text-blue-200 transition-colors"
                 >
-                  portfolio website
+                  Check out my portfolio →
                 </a>
-                !
-              </p>
-            </div>
-          </div>
-        </div>
+              </div>
 
-        {submitted ? (
-          <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative max-w-md mx-auto">
-            <p>Thank you for your message! We'll get back to you soon.</p>
+              <div className="mt-8 flex space-x-4">
+                <a
+                  href="https://www.linkedin.com/in/saleepshrestha"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white hover:text-blue-200 transition-colors"
+                >
+                  <Linkedin className="w-6 h-6" />
+                </a>
+                <a
+                  href="https://www.instagram.com/genz_travel_guide"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white hover:text-blue-200 transition-colors"
+                >
+                  <Instagram className="w-6 h-6" />
+                </a>
+              </div>
+            </div>
+
+            <div className="md:w-1/2 p-8">
+              {submitted ? (
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.5 }}
+                  className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative"
+                >
+                  <p className="font-bold">Thank you for your message!</p>
+                  <p>I'll get back to you soon with some awesome travel tips!</p>
+                </motion.div>
+              ) : (
+                <form onSubmit={handleSubmit}>
+                  <div className="mb-4">
+                    <label htmlFor="name" className="block text-gray-700 font-bold mb-2">
+                      Name
+                    </label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      required
+                      className="w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none focus:border-blue-500 transition-colors"
+                      placeholder="Your name"
+                    />
+                  </div>
+                  <div className="mb-4">
+                    <label htmlFor="email" className="block text-gray-700 font-bold mb-2">
+                      Email
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      required
+                      className="w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none focus:border-blue-500 transition-colors"
+                      placeholder="your.email@example.com"
+                    />
+                  </div>
+                  <div className="mb-6">
+                    <label htmlFor="message" className="block text-gray-700 font-bold mb-2">
+                      Message
+                    </label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      required
+                      rows={4}
+                      className="w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none focus:border-blue-500 transition-colors"
+                      placeholder="Your message here..."
+                    ></textarea>
+                  </div>
+                  <motion.button
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    type="submit"
+                    className="w-full bg-blue-600 text-white font-bold py-3 px-4 rounded-lg hover:bg-blue-700 transition-colors flex items-center justify-center"
+                  >
+                    <Send className="w-5 h-5 mr-2" />
+                    Send Message
+                  </motion.button>
+                </form>
+              )}
+            </div>
           </div>
-        ) : (
-          <form onSubmit={handleSubmit} className="max-w-md mx-auto">
-            <div className="mb-4">
-              <label htmlFor="name" className="block text-gray-700 font-bold mb-2">
-                Name
-              </label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                required
-                className="w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none focus:border-blue-500"
-              />
-            </div>
-            <div className="mb-4">
-              <label htmlFor="email" className="block text-gray-700 font-bold mb-2">
-                Email
-              </label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                required
-                className="w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none focus:border-blue-500"
-              />
-            </div>
-            <div className="mb-4">
-              <label htmlFor="message" className="block text-gray-700 font-bold mb-2">
-                Message
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                required
-                rows={4}
-                className="w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none focus:border-blue-500"
-              ></textarea>
-            </div>
-            <button
-              type="submit"
-              className="w-full bg-blue-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors"
-            >
-              Send Message
-            </button>
-          </form>
-        )}
+        </motion.div>
       </div>
     </main>
   )
