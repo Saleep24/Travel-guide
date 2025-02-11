@@ -30,16 +30,16 @@ export default function Contact() {
           <ArrowLeft className="w-5 h-5 mr-2" />
           Back to Home
         </Link>
-        <h1 className="text-4xl font-bold mb-8 text-center">Contact Me</h1>
+        <h1 className="text-4xl font-bold mb-8 text-center">Contact Us</h1>
 
         <div className="max-w-2xl mx-auto mb-12">
           <div className="flex flex-col md:flex-row items-center md:items-start gap-8 mb-8">
             <Image
-              src="/images/saleep-profile.jpg"
+              src="/images/saleep-profile.jpeg"
               alt="Saleep Shrestha"
-              width={200}
+              width={300}
               height={200}
-              className="rounded-full"
+              className="rounded-lg shadow-md"
             />
             <div>
               <h2 className="text-2xl font-bold mb-4">Hello everyone, I'm Saleep</h2>
@@ -57,7 +57,7 @@ export default function Contact() {
                 If you have any more questions, feel free to reach out to me through the form below! Also, if you want
                 to see more content from me, here is my{" "}
                 <a
-                  href="https://saleepshrestha.com.np/"
+                  href="https://your-portfolio-url.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-600 hover:underline"
