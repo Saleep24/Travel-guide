@@ -174,7 +174,11 @@ export default function Home() {
                 image: "/images/berlin-street-art.PNG",
                 link: "/experiences/street-art-berlin",
               },
-              { name: "Hamburg Fish Market", image: "/images/hamburg-fish-market.jpg" },
+              { 
+                name: "Hamburg Fish Market", 
+                image: "/images/hamburg-fish-market.jpg",
+                link: "/experiences/hamburg-fish-market"
+              },
               { name: "Lübeck's Marzipan Culture", image: "/images/lubeck-marzipan.jpg" },
               { name: "Alley Culture in Lübeck", image: "/images/lubeck-alley.jpg" },
               { name: "Lubeck Christmas Market", image: "/images/lubeck-christmas.jpg" },
