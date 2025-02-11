@@ -31,7 +31,7 @@ function HeroSection() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-5xl md:text-6xl font-extrabold text-white tracking-wider drop-shadow-lg mb-6"
         >
-          Street Art Tours in Berlin
+          Street Art Tours in Berlin, East Side Gallery
         </motion.h1>
         <motion.p
           initial={{ y: 20, opacity: 0 }}
@@ -111,10 +111,7 @@ export default function StreetArtBerlin() {
               viewport={{ once: true }}
             >
               <p className="text-lg text-gray-700">
-                Berlin's street art scene is a vibrant tapestry woven from the city's tumultuous history and creative
-                spirit. After the fall of the Berlin Wall in 1989, the city became a canvas for artists expressing
-                newfound freedom. The East Side Gallery, a 1.3km-long section of the Berlin Wall, transformed into one
-                of the world's largest open-air galleries, symbolizing unity and hope.
+              I have to tell you about one of the most unforgettable experiences I had in Berlin, the street art tour along the East Side Gallery. This place is a living reminder of the city's history and a true symbol of freedom. The Berlin Wall once divided a country, separating East and West Germany for almost 30 years. Built in 1961 by the East German government to stop people from fleeing to the democratic West, the wall stood as a harsh reminder of division until its fall on November 9, 1989. Today, every painting on this long stretch of wall speaks of hope, unity, and the power of expression. For Germans, this wall carries deep personal meaning, and people from all over the world come here to see how art has turned a symbol of separation into a canvas of togetherness. 
               </p>
 
               <div className="relative h-96 rounded-xl overflow-hidden shadow-lg">
@@ -122,12 +119,7 @@ export default function StreetArtBerlin() {
               </div>
 
               <p className="text-lg text-gray-700">
-                Throughout the 1990s and 2000s, Berlin's allure drew artists from around the globe, turning
-                neighborhoods like Kreuzberg, Friedrichshain, and Mitte into hubs of creativity. Today, Berlin's street
-                art scene is a vibrant mix of historical commentary, social critique, and pure artistic expression. As a
-                Gen Z traveler, exploring this urban gallery was like stepping into an Instagram feed come to life.
-                Every corner held a new surprise, from massive murals covering entire buildings to tiny, witty stencils
-                hidden in alleyways.
+              Walking along the East Side Gallery, I was amazed to see over a hundred paintings, murals, and graffiti. Each piece has its own story. I saw abstract designs that made me think, playful art that brought a smile to my face, and powerful images that carry messages of peace and resistance. One of the most famous pieces is "The Kiss" by Dmitri Vrubel. This painting shows a passionate embrace and speaks of reconciliation in a way that feels both bold and tender. I also noticed "The Guardian" and a striking piece featuring a peace sign. These artworks remind us to hold onto hope and keep striving for a better world. 
               </p>
 
               <div className="grid grid-cols-2 gap-4">
@@ -145,10 +137,7 @@ export default function StreetArtBerlin() {
               </div>
 
               <p className="text-lg text-gray-700">
-                One of the best experiences I had was joining a guided tour led by a local artist. It gave me incredible
-                insights into the stories behind the artworks. We explored areas like the RAW-Gelände, an old railway
-                yard turned cultural center, and the famous murals of Kreuzberg. The tour also introduced me to some
-                great local cafes and vintage shops along the way, adding depth to my Berlin experience.
+              The history behind the wall adds another layer to the art. Many of the artists who painted on this once dividing barrier were young and full of rebellious spirit after the wall fell. I think they saw an opportunity to heal old wounds and express dreams of unity. For many Germans, transforming the wall into a massive outdoor gallery was a way to take back a painful past and turn it into something beautiful and inspiring. This is why the East Side Gallery is so important (not just as a tourist attraction, but as a living piece of history that embraces street art as a form of catharsis and celebration). 
               </p>
 
               <div className="relative h-96 rounded-xl overflow-hidden shadow-lg">
@@ -156,11 +145,7 @@ export default function StreetArtBerlin() {
               </div>
 
               <p className="text-lg text-gray-700">
-                For my fellow Gen Z travelers, I highly recommend this experience. It's not just about seeing cool art –
-                it's about understanding Berlin's culture, history, and the power of creative expression. You'll get to
-                immerse yourself in a living, breathing art gallery that's always changing and gain a unique perspective
-                on Berlin's history and contemporary culture. Plus, you'll discover hidden gems and off-the-beaten-path
-                neighborhoods that you might not find in typical tourist guides.
+              What really made my visit special was the chance to see how the artists poured their emotions and experiences onto the wall. I felt like I was part of a shared story that unites past and present. At one point, I even wrote my name and signed it on the wall. It was a small gesture, but it connected me to countless others who have left their mark here. I promise myself that I will come back one day to see my name again and feel that unique feeling. 
               </p>
 
               <div className="grid grid-cols-3 gap-4">
@@ -181,18 +166,11 @@ export default function StreetArtBerlin() {
               </div>
 
               <p className="text-lg text-gray-700">
-                One of the best parts about exploring Berlin's street art scene is the opportunity to connect with
-                like-minded creatives from around the world. Whether you're chatting with other tourists on a guided
-                tour or striking up a conversation with a local artist, you'll find that the street art community is
-                welcoming and passionate. These interactions can lead to unexpected friendships and collaborations,
-                adding a whole new dimension to your travel experience.
+              Getting to the East Side Gallery is super easy with Berlin’s public transportation. You can take a train from anywhere in the city, which makes planning your visit really simple. When you’re there, don’t miss the chance to take a picture in front of your favorite piece of art. I took mine in front of “The Kiss” and a couple of other spots. The gallery is full of perfect corners for epic Instagram shots. And if you’re up for it, take a moment to read the messages and let the art speak to you. I believe every stroke and color carries a piece of history and emotion that is worth pausing for. 
               </p>
 
               <p className="text-lg text-gray-700">
-                Of course, for us Gen Z travelers, the Instagram potential is huge. You'll capture incredible content
-                for your social media, with each mural and installation offering a unique backdrop for your photos. But
-                beyond just getting likes, you'll be sharing art that often tackles important social and political
-                issues, sparking conversations among your followers and friends back home.
+              If you ever find yourself in Berlin, this tour is a must. The energy, the stories, and the creativity on display remind me why art matters. It connects us, heals us, and shows us that even the darkest parts of our history can be transformed into something beautiful. For Germans, embracing street art means reclaiming their past and celebrating their newfound freedom. Enjoy every moment, and don’t forget to leave your own mark, just like I did. 
               </p>
 
               <div className="relative h-96 rounded-xl overflow-hidden shadow-lg">
@@ -205,19 +183,11 @@ export default function StreetArtBerlin() {
               </div>
 
               <p className="text-lg text-gray-700">
-                Lastly, don't underestimate how inspiring this experience can be for your own creative projects. Whether
-                you're into photography, design, fashion, or any other form of art, Berlin's street art scene will fill
-                you with ideas and motivation. You might even be inspired to pick up a spray can yourself and contribute
-                to this ever-evolving urban canvas.
+                
               </p>
 
               <p className="text-lg text-gray-700">
-                In conclusion, a street art tour in Berlin is more than just a tourist activity – it's a journey through
-                history, culture, and creativity that resonates deeply with our generation. It's an experience that will
-                stay with you long after you've left the city, influencing how you see art, urban spaces, and perhaps
-                even your own creative potential. So when you're in Berlin, don't miss the chance to explore this
-                incredible aspect of the city. It's an adventure that's tailor-made for the curious, creative spirit of
-                Gen Z travelers.
+                
               </p>
             </motion.div>
           </div>
