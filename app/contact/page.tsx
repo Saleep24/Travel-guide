@@ -36,18 +36,12 @@ export default function Contact() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="bg-white shadow-xl rounded-lg overflow-hidden max-w-4xl mx-auto"
+          className="bg-white shadow-xl rounded-lg overflow-hidden max-w-5xl mx-auto"
         >
           <div className="md:flex">
-            <div className="md:w-1/2 p-8 bg-gradient-to-br from-blue-500 to-purple-600 text-white">
-              <h1 className="text-4xl font-bold mb-6">Get in Touch</h1>
-              <p className="mb-4">
-                Have questions about my Gen Z travel experiences in Northern Germany? Want to share your own stories?
-                I'd love to hear from you!
-              </p>
-
-              <div className="mb-8">
-                <h2 className="text-2xl font-semibold mb-4">Hello, I'm Saleep</h2>
+            <div className="md:w-1/2 p-8 bg-gradient-to-br from-blue-600 to-purple-600 text-white">
+              <h1 className="text-4xl font-bold mb-6">Contact Me</h1>
+              <div className="mb-6">
                 <Image
                   src="/images/saleep-profile.jpeg"
                   alt="Saleep Shrestha"
@@ -55,23 +49,33 @@ export default function Contact() {
                   height={200}
                   className="rounded-lg shadow-md mb-4"
                 />
-                <p className="text-sm">
-                  Computer Science sophomore at the University of Southern Mississippi. I explored Germany in Winter
-                  2024 with my honors class, bringing you the ultimate Gen Z guide to Northern Germany!
+                <h2 className="text-2xl font-semibold mb-2">Hello everyone, I'm Saleep</h2>
+                <p className="text-sm mb-4">
+                  A Computer Science sophomore studying at the University of Southern Mississippi.
                 </p>
               </div>
-
-              <div>
+              <div className="space-y-4 text-sm">
+                <p>
+                  I went to Germany in Winter 2024 with my honors class from the University of Southern Mississippi,
+                  organized by Study Abroad USM and the Honors College.
+                </p>
+                <p>
+                  This site serves as the one and only Gen Z guide to Northern Germany, where I (Generation Z) explored
+                  Lübeck, Hamburg, and other parts of Germany through a program designed by non-Gen Z (Millennials,
+                  Generation X, and Baby Boomers).
+                </p>
+                <p>If you have any more questions, feel free to reach out to me through the form below!</p>
+              </div>
+              <div className="mt-6">
                 <a
-                  href="https://your-portfolio-url.com"
+                  href="https://saleepshrestha.com.np/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white hover:text-blue-200 transition-colors"
+                  className="text-white hover:text-blue-200 transition-colors underline"
                 >
-                  Check out my portfolio →
+                  Also, if you want to see more content from me, here is my portfolio website!
                 </a>
               </div>
-
               <div className="mt-8 flex space-x-4">
                 <a
                   href="https://www.linkedin.com/in/saleepshrestha"
@@ -82,7 +86,7 @@ export default function Contact() {
                   <Linkedin className="w-6 h-6" />
                 </a>
                 <a
-                  href="https://www.instagram.com/genz_travel_guide"
+                  href="https://www.instagram.com/saleep.shrestha"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white hover:text-blue-200 transition-colors"
@@ -93,6 +97,7 @@ export default function Contact() {
             </div>
 
             <div className="md:w-1/2 p-8">
+              <h2 className="text-3xl font-bold mb-6 text-gray-800">Get in Touch</h2>
               {submitted ? (
                 <motion.div
                   initial={{ opacity: 0, scale: 0.8 }}
