@@ -3,11 +3,51 @@
 import { useState, useEffect } from "react"
 import Image from "next/image"
 import Link from "next/link"
-import { Search, BookmarkPlus, Menu, ArrowRight, Linkedin, Instagram } from "lucide-react"
-import { motion } from "framer-motion"
+import { Search, Menu, ArrowRight, Linkedin, Instagram, X } from "lucide-react"
+import { motion, AnimatePresence } from "framer-motion"
 
 export default function Home() {
   const [isScrolled, setIsScrolled] = useState(false)
+  const [isSearchOpen, setIsSearchOpen] = useState(false)
+  const [searchQuery, setSearchQuery] = useState("")
+
+  const allExperiences = [
+    {
+      name: "Street Art Tours in Berlin",
+      link: "/experiences/street-art-berlin",
+      category: "Berlin",
+    },
+    {
+      name: "Hamburg Fish Market",
+      link: "/experiences/hamburg-fish-market",
+      category: "Hamburg",
+    },
+    {
+      name: "Harbor Boat Trip",
+      link: "/experiences/harbor-boat-trip",
+      category: "Hamburg",
+    },
+    {
+      name: "Alley Culture in Lübeck",
+      link: "/experiences/lubeck-alley-culture",
+      category: "Lübeck",
+    },
+    {
+      name: "Lubeck Christmas Market",
+      link: "/experiences/lubeck-christmas-market",
+      category: "Lübeck",
+    },
+    {
+      name: "Underground Culture of St-Pauli",
+      link: "/experiences/stpauli-underground",
+      category: "Hamburg",
+    },
+  ]
+
+  const filteredExperiences = allExperiences.filter((exp) =>
+    exp.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+    exp.category.toLowerCase().includes(searchQuery.toLowerCase())
+  )
 
   useEffect(() => {
     const handleScroll = () => {
@@ -58,7 +98,6 @@ export default function Home() {
               >
                 Berlin
               </Link>
-              
               <Link
                 href="/contact"
                 className={`transition-colors duration-300 ${isScrolled ? "text-gray-600 hover:text-gray-900" : "text-white hover:text-gray-200"}`}
@@ -69,14 +108,11 @@ export default function Home() {
 
             <div className="flex items-center space-x-4">
               <button
+                onClick={() => setIsSearchOpen(true)}
                 className={`p-2 rounded-full transition-colors duration-300 ${isScrolled ? "hover:bg-gray-100" : "hover:bg-white/20"}`}
+                aria-label="Search experiences"
               >
                 <Search className={`w-5 h-5 ${isScrolled ? "text-gray-600" : "text-white"}`} />
-              </button>
-              <button
-                className={`p-2 rounded-full transition-colors duration-300 ${isScrolled ? "hover:bg-gray-100" : "hover:bg-white/20"}`}
-              >
-                <BookmarkPlus className={`w-5 h-5 ${isScrolled ? "text-gray-600" : "text-white"}`} />
               </button>
               <button
                 className={`md:hidden p-2 rounded-full transition-colors duration-300 ${isScrolled ? "hover:bg-gray-100" : "hover:bg-white/20"}`}
@@ -87,6 +123,66 @@ export default function Home() {
           </div>
         </div>
       </motion.nav>
+
+      {/* Search Overlay */}
+      <AnimatePresence>
+        {isSearchOpen && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-start justify-center pt-20 px-4"
+          >
+            <motion.div
+              initial={{ y: -20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              exit={{ y: -20, opacity: 0 }}
+              className="bg-white rounded-xl shadow-2xl w-full max-w-2xl overflow-hidden"
+            >
+              <div className="p-4 border-b flex items-center">
+                <Search className="w-5 h-5 text-gray-400 mr-3" />
+                <input
+                  type="text"
+                  placeholder="Search experiences, cities, or attractions..."
+                  className="flex-1 text-lg outline-none"
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  autoFocus
+                />
+                <button
+                  onClick={() => setIsSearchOpen(false)}
+                  className="p-2 hover:bg-gray-100 rounded-full transition-colors"
+                >
+                  <X className="w-5 h-5 text-gray-500" />
+                </button>
+              </div>
+              <div className="max-h-[60vh] overflow-y-auto">
+                {searchQuery && (
+                  <div className="p-2">
+                    {filteredExperiences.length === 0 ? (
+                      <p className="text-gray-500 text-center py-4">No experiences found</p>
+                    ) : (
+                      <div className="space-y-2">
+                        {filteredExperiences.map((exp) => (
+                          <Link
+                            key={exp.link}
+                            href={exp.link}
+                            className="block p-3 hover:bg-gray-50 rounded-lg transition-colors"
+                            onClick={() => setIsSearchOpen(false)}
+                          >
+                            <div className="font-medium text-gray-900">{exp.name}</div>
+                            <div className="text-sm text-gray-500">{exp.category}</div>
+                          </Link>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                )}
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       {/* Hero Section */}
       <section className="relative h-[90vh] flex items-center justify-center">
