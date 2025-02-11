@@ -39,7 +39,7 @@ export default function Contact() {
           className="bg-white shadow-xl rounded-lg overflow-hidden max-w-6xl mx-auto"
         >
           <div className="md:flex">
-            <div className="md:w-3/5 p-8 bg-gradient-to-br from-blue-600 to-purple-600 text-white">
+            <div className="md:w-3/5 p-8 bg-gradient-to-br from-gray-800 to-gray-900 text-white">
               <div className="flex flex-col justify-between h-full">
                 <div>
                   <h1 className="text-4xl font-bold mb-6">Contact Me</h1>

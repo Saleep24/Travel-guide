@@ -58,12 +58,7 @@ export default function Home() {
               >
                 Berlin
               </Link>
-              <Link
-                href="/tips"
-                className={`transition-colors duration-300 ${isScrolled ? "text-gray-600 hover:text-gray-900" : "text-white hover:text-gray-200"}`}
-              >
-                Travel Tips
-              </Link>
+              
               <Link
                 href="/contact"
                 className={`transition-colors duration-300 ${isScrolled ? "text-gray-600 hover:text-gray-900" : "text-white hover:text-gray-200"}`}
