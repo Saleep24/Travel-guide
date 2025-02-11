@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import Image from "next/image"
 import Link from "next/link"
 import { ArrowLeft } from "lucide-react"
 
@@ -29,7 +30,46 @@ export default function Contact() {
           <ArrowLeft className="w-5 h-5 mr-2" />
           Back to Home
         </Link>
-        <h1 className="text-4xl font-bold mb-8 text-center">Contact Us</h1>
+        <h1 className="text-4xl font-bold mb-8 text-center">Contact Me</h1>
+
+        <div className="max-w-2xl mx-auto mb-12">
+          <div className="flex flex-col md:flex-row items-center md:items-start gap-8 mb-8">
+            <Image
+              src="/images/saleep-profile.jpg"
+              alt="Saleep Shrestha"
+              width={200}
+              height={200}
+              className="rounded-full"
+            />
+            <div>
+              <h2 className="text-2xl font-bold mb-4">Hello everyone, I'm Saleep</h2>
+              <p className="text-gray-700 mb-4">
+                I'm a Computer Science sophomore studying at the University of Southern Mississippi. I went to Germany
+                in Winter 2024 with my honors class from the University of Southern Mississippi, organized by Study
+                Abroad USM and the Honors College.
+              </p>
+              <p className="text-gray-700 mb-4">
+                This site serves as the one and only Gen Z guide to Northern Germany, where I (Generation Z) explored
+                Lübeck, Hamburg, and other parts of Germany through a program designed by non-Gen Z (Millennials,
+                Generation X, and Baby Boomers).
+              </p>
+              <p className="text-gray-700 mb-4">
+                If you have any more questions, feel free to reach out to me through the form below! Also, if you want
+                to see more content from me, here is my{" "}
+                <a
+                  href="https://saleepshrestha.com.np/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:underline"
+                >
+                  portfolio website
+                </a>
+                !
+              </p>
+            </div>
+          </div>
+        </div>
+
         {submitted ? (
           <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative max-w-md mx-auto">
             <p>Thank you for your message! We'll get back to you soon.</p>
