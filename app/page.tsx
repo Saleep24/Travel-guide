@@ -324,32 +324,32 @@ export default function Home() {
       {/* Gen Z Travel Tips Section */}
       <section className="py-20 px-4 bg-gradient-to-r from-blue-500/5 via-purple-500/5 to-pink-500/5">
         <div className="container mx-auto">
-          <h2 className="text-4xl font-bold mb-12 text-center">Gen Z Travel Tips</h2>
+          <h2 className="text-4xl font-bold mb-12 text-center">My Personal Travel Tips</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
-                title: "Navigation Made Easy",
-                tips: ["Offline maps", "Public transport apps", "Best photo spots"],
+                title: "Easy Navigation",
+                tips: ["Download Offline maps", "Public transport apps", "Free public wifi mostly everywhere"],
               },
               {
-                title: "Money Savers",
-                tips: ["Student discounts", "Free walking tours", "Budget food spots"],
+                title: "Money Related",
+                tips: ["Ask for student discounts", "Always carry cash with you", "Check free entry days for museums"],
               },
               {
-                title: "Local Experiences",
-                tips: ["Language basics", "Cultural etiquette", "Hidden gems"],
+                title: "Pack Smart",
+                tips: ["Get a rainboot and raincoat for wet winters", "Get a power bank and Universal adapter", "Layer your clothes"],
               },
               {
-                title: "Tech Essentials",
-                tips: ["Best travel apps", "WiFi spots", "Power adapter tips"],
+                title: "Photo Guide",
+                tips: ["Empty morning streets", "Golden hour at Holsten Gate", "Elbphilharmonie sunset"],
               },
               {
-                title: "Sustainable Travel",
-                tips: ["Eco-friendly transport", "Zero-waste tips", "Green accommodations"],
+                title: "Cultural Tips",
+                tips: ["Learn Basic German (Danke)", "Most of the shops are closed on Sundays", "Always be on time"],
               },
               {
                 title: "Social Media Guide",
-                tips: ["Instagram spots", "Content creation", "Local hashtags"],
+                tips: ["Instagram spots", "Content creation", "Use local hashtags such as #lubeck"],
               },
             ].map((section) => (
               <motion.div
