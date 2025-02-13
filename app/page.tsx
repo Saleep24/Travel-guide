@@ -330,32 +330,32 @@ export default function Home() {
               {
                 title: "Easy Navigation",
                 tips: ["Download Offline maps", "Public transport apps", "Free public wifi mostly everywhere"],
-                image: "/images/2.jpg",
+                image: "/images/easy-navigation.JPEG",
               },
               {
                 title: "Money Related",
                 tips: ["Ask for student discounts", "Always carry cash with you", "Check free entry days for museums"],
-                image: "/images/money.jpg",
+                image: "/images/parliament.jpeg",
               },
               {
                 title: "Pack Smart",
                 tips: ["Get a rainboot and raincoat for wet winters", "Get a power bank and Universal adapter", "Layer your clothes"],
-                image: "/images/packing.jpg",
+                image: "/images/seymor.jpeg",
               },
               {
                 title: "Photo Guide",
                 tips: ["Empty morning streets", "Golden hour at Holsten Gate", "Elbphilharmonie sunset"],
-                image: "/images/photo.jpg",
+                image: "/images/photo-guide.JPEG",
               },
               {
                 title: "Cultural Tips",
                 tips: ["Learn Basic German (Danke)", "Most of the shops are closed on Sundays", "Always be on time"],
-                image: "/images/culture.jpg",
+                image: "/images/east-german-truck.jpeg",
               },
               {
                 title: "Social Media Guide",
                 tips: ["Instagram spots", "Content creation", "Use local hashtags such as #lubeck"],
-                image: "/images/social.jpg",
+                image: "/images/social.jpeg",
               },
             ].map((section) => (
               <motion.div
