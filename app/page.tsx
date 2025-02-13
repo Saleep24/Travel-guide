@@ -324,48 +324,72 @@ export default function Home() {
       {/* Gen Z Travel Tips Section */}
       <section className="py-20 px-4 bg-gradient-to-r from-blue-500/5 via-purple-500/5 to-pink-500/5">
         <div className="container mx-auto">
-          <h2 className="text-4xl font-bold mb-12 text-center">My Personal Travel Tips</h2>
+          <h2 className="text-4xl font-bold mb-12 text-center">My Favorite Travel Tips</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
                 title: "Easy Navigation",
                 tips: ["Download Offline maps", "Public transport apps", "Free public wifi mostly everywhere"],
+                image: "/images/2.jpg",
               },
               {
                 title: "Money Related",
                 tips: ["Ask for student discounts", "Always carry cash with you", "Check free entry days for museums"],
+                image: "/images/money.jpg",
               },
               {
                 title: "Pack Smart",
                 tips: ["Get a rainboot and raincoat for wet winters", "Get a power bank and Universal adapter", "Layer your clothes"],
+                image: "/images/packing.jpg",
               },
               {
                 title: "Photo Guide",
                 tips: ["Empty morning streets", "Golden hour at Holsten Gate", "Elbphilharmonie sunset"],
+                image: "/images/photo.jpg",
               },
               {
                 title: "Cultural Tips",
                 tips: ["Learn Basic German (Danke)", "Most of the shops are closed on Sundays", "Always be on time"],
+                image: "/images/culture.jpg",
               },
               {
                 title: "Social Media Guide",
                 tips: ["Instagram spots", "Content creation", "Use local hashtags such as #lubeck"],
+                image: "/images/social.jpg",
               },
             ].map((section) => (
               <motion.div
                 key={section.title}
-                className="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow"
+                className="relative h-80 rounded-xl overflow-hidden group"
                 whileHover={{ scale: 1.02 }}
               >
-                <h3 className="text-xl font-semibold mb-4">{section.title}</h3>
-                <ul className="space-y-2">
-                  {section.tips.map((tip) => (
-                    <li key={tip} className="text-gray-600 flex items-center">
-                      <span className="w-2 h-2 bg-blue-500 rounded-full mr-2" />
-                      {tip}
-                    </li>
-                  ))}
-                </ul>
+                <Image
+                  src={section.image}
+                  alt={section.title}
+                  fill
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                
+                {/* Always visible title */}
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <h3 className="text-2xl font-semibold text-white z-10 group-hover:opacity-0 transition-opacity duration-300">
+                    {section.title}
+                  </h3>
+                </div>
+
+                {/* Content that appears on hover */}
+                <div className="absolute inset-0 p-6 flex flex-col justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <h3 className="text-xl font-semibold text-white mb-4">{section.title}</h3>
+                  <ul className="space-y-2">
+                    {section.tips.map((tip) => (
+                      <li key={tip} className="text-white flex items-center">
+                        <span className="w-2 h-2 bg-blue-500 rounded-full mr-2" />
+                        {tip}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </motion.div>
             ))}
           </div>
