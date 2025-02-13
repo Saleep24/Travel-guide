@@ -22,7 +22,7 @@ function HeroSection() {
         playsInline
         className="absolute inset-0 w-full h-full object-cover"
       >
-        <source src="/videos/hamburg.mp4" type="video/mp4" />
+        <source src="/videos/berlin.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </motion.video>
       <motion.div style={{ opacity }} className="absolute inset-0 bg-black/50" />
