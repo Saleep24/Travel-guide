@@ -6,6 +6,7 @@ import Link from "next/link"
 import { Search, Menu, ArrowRight, Linkedin, Instagram, X } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 
+
 export default function Home() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isSearchOpen, setIsSearchOpen] = useState(false)
