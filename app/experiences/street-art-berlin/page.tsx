@@ -111,15 +111,14 @@ export default function StreetArtBerlin() {
               viewport={{ once: true }}
             >
               <p className="text-lg text-gray-700">
-              I have to tell you about one of the most unforgettable experiences I had in Berlin, the street art tour along the East Side Gallery. This place is a living reminder of the city's history and a true symbol of freedom. The Berlin Wall once divided a country, separating East and West Germany for almost 30 years. Built in 1961 by the East German government to stop people from fleeing to the democratic West, the wall stood as a harsh reminder of division until its fall on November 9, 1989. Today, every painting on this long stretch of wall speaks of hope, unity, and the power of expression. For Germans, this wall carries deep personal meaning, and people from all over the world come here to see how art has turned a symbol of separation into a canvas of togetherness. 
-              </p>
+              One of the most unforgettable experiences I had in Berlin involved exploring the East Side Gallery. This place is a living reminder of the city's history and a true symbol of freedom. The Berlin Wall once divided a country, separating East and West Germany for almost 30 years. Built in 1961 by the East German government to stop people from fleeing to the democratic West, the wall stood as a harsh reminder of division until its fall on November 9, 1989. Today, every painting on this long stretch of wall speaks of hope, unity, and the power of expression. For local Germans, this wall carries deep personal meaning, and people from all over the world come here to see how art has turned a symbol of separation into a street of resilience, hope, and togetherness.               </p>
 
               <div className="relative h-96 rounded-xl overflow-hidden shadow-lg">
                 <Image src="/images/berlin-street-art.jpg" alt="East Side Gallery" fill className="object-cover" />
               </div>
 
               <p className="text-lg text-gray-700">
-              Walking along the East Side Gallery, I was amazed to see over a hundred paintings, murals, and graffiti. Each piece has its own story. I saw abstract designs that made me think, playful art that brought a smile to my face, and powerful images that carry messages of peace and resistance. One of the most famous pieces is "The Kiss" by Dmitri Vrubel. This painting shows a passionate embrace and speaks of reconciliation in a way that feels both bold and tender. I also noticed "The Guardian" and a striking piece featuring a peace sign. These artworks remind us to hold onto hope and keep striving for a better world. 
+              Walking along the East Side Gallery, I was amazed to see over a hundred paintings and murals. Each piece has its own story. I saw abstract designs that made me think deeply, playful art that brought a smile to my face, and powerful images that carry messages of peace and hope. One of the most famous pieces is "The Kiss" by Dmitri Vrubel. This painting does not represent the LGBTQ community in Germany, as I initially thought, but instead represents a historic embrace between Soviet leader Leonid Brezhnev and East German leader Erich Honecker, symbolizing the close ties between their regimes. Another notable piece is "The Guardian," alongside various other works that highlight the struggles  of Germans during and after the division.
               </p>
 
               <div className="grid grid-cols-2 gap-4">
@@ -137,7 +136,7 @@ export default function StreetArtBerlin() {
               </div>
 
               <p className="text-lg text-gray-700">
-              The history behind the wall adds another layer to the art. Many of the artists who painted on this once dividing barrier were young and full of rebellious spirit after the wall fell. I think they saw an opportunity to heal old wounds and express dreams of unity. For many Germans, transforming the wall into a massive outdoor gallery was a way to take back a painful past and turn it into something beautiful and inspiring. This is why the East Side Gallery is so important (not just as a tourist attraction, but as a living piece of history that embraces street art as a form of catharsis and celebration). 
+              The history behind the wall adds another layer to the art. Many of the artists who painted on this once-dividing barrier were young and full of rebellious spirit after the wall fell. I think they saw an opportunity to heal old wounds and express dreams of unity. For many Germans, transforming the wall into a massive outdoor gallery was a way to take back a painful past and turn it into something beautiful and inspiring. This is why the East Side Gallery is so important, not just as a tourist attraction, but as a living piece of history that embraces street art as a form of celebration. It’s important to note that the graffiti is on the back side of the wall, while any graffiti on the front side is considered vandalism.
               </p>
 
               <div className="relative h-96 rounded-xl overflow-hidden shadow-lg">
@@ -145,7 +144,7 @@ export default function StreetArtBerlin() {
               </div>
 
               <p className="text-lg text-gray-700">
-              What really made my visit special was the chance to see how the artists poured their emotions and experiences onto the wall. I felt like I was part of a shared story that unites past and present. At one point, I even wrote my name and signed it on the wall. It was a small gesture, but it connected me to countless others who have left their mark here. I promise myself that I will come back one day to see my name again and feel that unique feeling. 
+              What really made my visit special was the chance to see how the artists poured their emotions and experiences onto the wall. I felt like I was part of a shared story that unites past and present. I also wrote my name and signed it on the back of the wall. It was a small gesture for me, but it connected me to countless others who have left their mark here. Even though, I realize that while I can empathize with East Germans who experienced the fall of the wall, I cannot truly feel what they felt in that moment of liberation. Instead, I can appreciate their joy and the significance of that historical event.
               </p>
 
               <div className="grid grid-cols-3 gap-4">
@@ -166,11 +165,11 @@ export default function StreetArtBerlin() {
               </div>
 
               <p className="text-lg text-gray-700">
-              Getting to the East Side Gallery is super easy with Berlin’s public transportation. You can take a train from anywhere in the city, which makes planning your visit really simple. When you’re there, don’t miss the chance to take a picture in front of your favorite piece of art. I took mine in front of “The Kiss” and a couple of other spots. The gallery is full of perfect corners for epic Instagram shots. And if you’re up for it, take a moment to read the messages and let the art speak to you. I believe every stroke and color carries a piece of history and emotion that is worth pausing for. 
+              Getting to the East Side Gallery is super easy with Berlin’s public transportation. You can take a train from anywhere in the city, which makes planning your visit really simple. When you’re there, don’t miss the chance to take a picture in front of your favorite piece of art. I took mine in front of “The Kiss” and a couple of other paintings. The gallery is full of perfect corners for epic Instagram shots. Also, many of these artworks now have QR codes that provide more information about their meaning and history, so be sure to check them out. And if you’re up for it, take a moment to read the messages and let the art speak to you.
               </p>
 
               <p className="text-lg text-gray-700">
-              If you ever find yourself in Berlin, this tour is a must. The energy, the stories, and the creativity on display remind me why art matters. It connects us, heals us, and shows us that even the darkest parts of our history can be transformed into something beautiful. For Germans, embracing street art means reclaiming their past and celebrating their newfound freedom. Enjoy every moment, and don’t forget to leave your own mark, just like I did. 
+              If you ever find yourself in Berlin, visiting the East Side Gallery is a must. The energy, the stories, and the creativity on display remind me why art matters. It connects us, heals us, and shows us that even the darkest parts of our history can be transformed into something beautiful. For Germans, embracing this version of street art means reclaiming their past and celebrating their newfound freedom. Enjoy every moment, and don’t forget to leave your own mark, just like I did.
               </p>
 
               <div className="relative h-96 rounded-xl overflow-hidden shadow-lg">
