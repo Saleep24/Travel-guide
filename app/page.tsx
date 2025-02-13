@@ -269,7 +269,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-8">
             {[
               {
-                name: "Street Art Tours in Berlin",
+                name: "East Side Gallery",
                 image: "/images/berlin-street-art.PNG",
                 link: "/experiences/street-art-berlin",
               },

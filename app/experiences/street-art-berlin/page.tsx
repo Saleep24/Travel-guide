@@ -31,7 +31,7 @@ function HeroSection() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-5xl md:text-6xl font-extrabold text-white tracking-wider drop-shadow-lg mb-6"
         >
-          Street Art Tours in Berlin, East Side Gallery
+          East Side Gallery
         </motion.h1>
         <motion.p
           initial={{ y: 20, opacity: 0 }}
@@ -39,7 +39,7 @@ function HeroSection() {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-xl md:text-3xl text-gray-200 drop-shadow-md mb-8"
         >
-          Discover the vibrant urban canvas of Germany's capital
+          Vibrant canvas of German capital
         </motion.p>
       </motion.div>
     </section>
