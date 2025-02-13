@@ -76,7 +76,7 @@ const instaSpots = [
   },
   {
     name: "East Side Gallery",
-    image: "/images/east-gallery.jpeg",
+    image: "/images/berlin-street-art.jpg",
     description:
       "If you're into street art and history, the East Side Gallery should be your favorite place in entire Europe! It's the longest remaining stretch of the Berlin Wall, and now it's basically the world's longest open air gallery. My favorite part? The famous 'The Kiss' painting, you know, the one with the two politicians kissing. The whole wall is super colorful and perfect for those artsy Instagram shots. Just avoid the middle of the day when it gets super crowded!",
   },
@@ -94,7 +94,7 @@ const instaSpots = [
   },
   {
     name: "German Spy Museum",
-    image: "/images/spy-museum.jpeg",
+    image: "/images/spy-museum.JPEG",
     description:
       "Okay, the Spy Museum is literally the most fun museum ever! They've got this laser maze room where you can pretend you're in a spy movie (perfect for Reels or TikToks). There's also a photo booth where you can dress up as a spy which gives James Bond vibes! Definitely bring your friends here, it's way more fun as a group. Pro tip: try the lie detector test, it's superhilarious!",
   },
@@ -106,7 +106,7 @@ const instaSpots = [
   },
   {
     name: "Sanssouci Palace",
-    image: "/images/sanssouci.jpeg",
+    image: "/images/sanssouci.JPEG",
     description:
       "Okay, technically this is in Potsdam (like 30 mins from Berlin), but you HAVE to visit Sanssouci Palace! It gives major Bridgerton vibes with its rococo architecture and stunning gardens. The terraced vineyard in front of the palace is probably the most Instagram worthy spot. Maybe try to visit during spring or fall (I visited during winter and the garden was not that welcoming great :() and send me your photos!",
   },
