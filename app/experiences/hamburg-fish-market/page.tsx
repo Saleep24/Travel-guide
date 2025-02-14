@@ -114,7 +114,7 @@ export default function HamburgFishMarket() {
               One of the most unforgettable experiences I had in Hamburg was visiting the historic Fish Market. This place is a living tradition and a true symbol of the city’s culture. The market has been running since 1703, making it one of Hamburg’s oldest and most cherished institutions. Every Sunday morning, all kinds of people, locals, tourists, night owls, and early risers gather here. What amazed me most was how this market brings together such a diverse mix of people and energy.               </p>
 
               <div className="relative h-96 rounded-xl overflow-hidden shadow-lg">
-                <Image src="/images/fish-market-aerial.jpg" alt="Hamburg Fish Market Aerial View" fill className="object-cover" />
+                <Image src="/images/flower.jpeg" alt="Hamburg Fish Market Aerial View" fill className="object-cover" />
               </div>
 
               <p className="text-lg text-gray-700">
@@ -123,10 +123,10 @@ export default function HamburgFishMarket() {
 
               <div className="grid grid-cols-2 gap-4">
                 <div className="relative h-64 rounded-xl overflow-hidden shadow-lg">
-                  <Image src="/images/fish-vendor.jpg" alt="Fish Market Vendor" fill className="object-cover" />
+                  <Image src="/images/fish-market-me.jpeg" alt="Fish Market Vendor" fill className="object-cover" />
                 </div>
                 <div className="relative h-64 rounded-xl overflow-hidden shadow-lg">
-                  <Image src="/images/market-crowd.jpg" alt="Market Crowd" fill className="object-cover" />
+                  <Image src="/images/fish-market-stall.jpeg" alt="Market Crowd" fill className="object-cover" />
                 </div>
               </div>
 
@@ -135,7 +135,7 @@ export default function HamburgFishMarket() {
               </p>
 
               <div className="relative h-96 rounded-xl overflow-hidden shadow-lg">
-                <Image src="/images/auction-hall.jpg" alt="Fish Auction Hall Interior" fill className="object-cover" />
+                <Image src="/images/dance.JPEG" alt="Fish Auction Hall Interior" fill className="object-cover" />
               </div>
 
               <p className="text-lg text-gray-700">
@@ -144,13 +144,13 @@ export default function HamburgFishMarket() {
 
               <div className="grid grid-cols-3 gap-4">
                 <div className="relative h-48 rounded-xl overflow-hidden shadow-lg">
-                  <Image src="/images/fish-sandwich.jpg" alt="Traditional Fischbrötchen" fill className="object-cover" />
+                  <Image src="/images/fish-market-first.jpeg" alt="Traditional Fischbrötchen" fill className="object-cover" />
                 </div>
                 <div className="relative h-48 rounded-xl overflow-hidden shadow-lg">
-                  <Image src="/images/market-produce.jpg" alt="Fresh Produce" fill className="object-cover" />
+                  <Image src="/images/fish-fruits.jpeg" alt="Fresh Produce" fill className="object-cover" />
                 </div>
                 <div className="relative h-48 rounded-xl overflow-hidden shadow-lg">
-                  <Image src="/images/market-flowers.jpg" alt="Flower Stand" fill className="object-cover" />
+                  <Image src="/images/litchi.jpeg" alt="Flower Stand" fill className="object-cover" />
                 </div>
               </div>
 
@@ -158,7 +158,7 @@ export default function HamburgFishMarket() {
               If you ever find yourself in Hamburg, visiting the Fish Market is a must. Even if it means cutting your Saturday night short, waking up early is absolutely worth it. The market runs every Sunday from 7 AM to 9:30 AM in winter. Getting there is easy, just take the U3 to Landungsbrücken or the S1/S3 to Reeperbahn station. Pro tip: arrive early to catch the sunrise over the Elbe, it’s a breathtaking sight. Also, bring cash, as most vendors don’t accept cards, and don’t be afraid to engage with the sellers (bargain!). The energy, the tradition, and the community make the Hamburg Fish Market one of the most unforgettable experiences in the city.              </p>
 
               <div className="relative h-96 rounded-xl overflow-hidden shadow-lg">
-                <Image src="/images/harbor-sunrise.jpg" alt="Hamburg Harbor Sunrise" fill className="object-cover" />
+                <Image src="/images/something-fish-market.jpeg" alt="Hamburg Harbor Sunrise" fill className="object-cover" />
               </div>
 
               <p className="text-lg text-gray-700">
