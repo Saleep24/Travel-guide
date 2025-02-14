@@ -115,7 +115,7 @@ export default function StPauliUnderground() {
               </p>
 
               <div className="relative h-96 rounded-xl overflow-hidden shadow-lg">
-                <Image src="/images/stpauli-street.jpg" alt="St. Pauli Street Scene" fill className="object-cover" />
+                <Image src="/images/st-pauli-street.jpeg" alt="St. Pauli Street Scene" fill className="object-cover" />
               </div>
 
               <p className="text-lg text-gray-700">
@@ -124,10 +124,10 @@ export default function StPauliUnderground() {
 
               <div className="grid grid-cols-2 gap-4">
                 <div className="relative h-64 rounded-xl overflow-hidden shadow-lg">
-                  <Image src="/images/stpauli-art.jpg" alt="Street Art" fill className="object-cover" />
+                  <Image src="/images/hans.jpeg" alt="Street Art" fill className="object-cover" />
                 </div>
                 <div className="relative h-64 rounded-xl overflow-hidden shadow-lg">
-                  <Image src="/images/stpauli-cafe.jpg" alt="Alternative Cafe" fill className="object-cover" />
+                  <Image src="/images/bar.jpeg" alt="Alternative Cafe" fill className="object-cover" />
                 </div>
               </div>
 
@@ -136,7 +136,7 @@ export default function StPauliUnderground() {
               </p>
 
               <div className="relative h-96 rounded-xl overflow-hidden shadow-lg">
-                <Image src="/images/flohschanze.jpg" alt="Flohschanze Market" fill className="object-cover" />
+                <Image src="/images/band.jpeg" alt="Flohschanze Market" fill className="object-cover" />
               </div>
 
               <p className="text-lg text-gray-700">
