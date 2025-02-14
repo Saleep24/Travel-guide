@@ -111,65 +111,64 @@ export default function LubeckChristmasMarket() {
               viewport={{ once: true }}
             >
               <p className="text-lg text-gray-700">
-              One of the most unforgettable experiences I had in Germany was visiting the Lübeck Christmas Market. This historic market, which started in the 17th century, is one of the oldest and most famous in Germany. Every year, people from all over Germany, Europe, and even other parts of the world come to Lübeck to enjoy the Lübeck's magic. The market spreads through the city’s old streets, filling the air with the smell of roasted almonds, warm spiced wine, and festive vibes.
+                One of the most unforgettable experiences I had in Germany was visiting the Lübeck Christmas Market. This historic market, which started in the 17th century, is one of the oldest and most famous in Germany. Every year, people from all over Germany, Europe, and even other parts of the world come to Lübeck to enjoy Lübeck&apos;s magic. The market spreads through the city&apos;s old streets, filling the air with the smell of roasted almonds, warm spiced wine, and festive vibes.
               </p>
 
-              <div className="relative h-96 rounded-xl overflow-hidden shadow-lg">
-                <Image src="/images/christmas-overview.jpg" alt="Christmas Market Overview" fill className="object-cover" />
+              <div className="relative h-[600px] rounded-xl overflow-hidden shadow-lg">
+                <Image src="/images/christmas-overview.jpeg" alt="Christmas Market Overview" fill className="object-cover" />
               </div>
 
               <p className="text-lg text-gray-700">
-              Lübeck, once the capital of the Hanseatic League, has long been known for its rich history and beautiful architecture. The Christmas market tradition started centuries ago as a way for local craftsmen and merchants to sell their goods during the holiday season. Today, it has grown into a grand celebration, with beautifully decorated stalls selling handmade gifts, festive decorations, and delicious seasonal treats. Whether you want to find special gifts or just enjoy the festive vibe, the Lübeck Christmas Market is the place to be.
+                Lübeck, once the capital of the Hanseatic League, has long been known for its rich history and beautiful architecture. The Christmas market tradition started centuries ago as a way for local craftsmen and merchants to sell their goods during the holiday season. Today, it has grown into a grand celebration, with beautifully decorated stalls selling handmade gifts, festive decorations, and delicious seasonal treats. Whether you want to find special gifts or just enjoy the festive vibe, the Lübeck Christmas Market is the place to be.
               </p>
 
               <div className="grid grid-cols-2 gap-4">
-                <div className="relative h-64 rounded-xl overflow-hidden shadow-lg">
-                  <Image src="/images/christmas-craft.jpg" alt="Christmas Craft Market" fill className="object-cover" />
+                <div className="relative h-[500px] rounded-xl overflow-hidden shadow-lg">
+                  <Image src="/images/christmas-market-1.jpeg" alt="Christmas Craft Market" fill className="object-cover" />
                 </div>
-                <div className="relative h-64 rounded-xl overflow-hidden shadow-lg">
-                  <Image src="/images/fairy-tale-forest.jpg" alt="Fairy Tale Forest" fill className="object-cover" />
+                <div className="relative h-[500px] rounded-xl overflow-hidden shadow-lg">
+                  <Image src="/images/christmas-market-food.jpeg" alt="Fairy Tale Forest" fill className="object-cover" />
                 </div>
               </div>
 
               <p className="text-lg text-gray-700">
-              I visited the market on its last day, which turned out to be the best time to grab some great deals on decorations and souvenirs. I picked up some beautiful handcrafted ornaments and a Christmas globe at a bargain. The stalls were filled with intricate wooden carvings, festive candles, and unique gifts that you won’t find anywhere else. If you love Christmas decorations, this market is a dream come true.
+                I visited the market on its last day, which turned out to be the best time to grab some great deals on decorations and souvenirs. I picked up some beautiful handcrafted ornaments and a Christmas globe at a bargain. The stalls were filled with intricate wooden carvings, festive candles, and unique gifts that you won&apos;t find anywhere else. If you love Christmas decorations, this market is a dream come true.
               </p>
 
-              <div className="relative h-96 rounded-xl overflow-hidden shadow-lg">
-                <Image src="/images/christmas-night.jpg" alt="Christmas Market at Night" fill className="object-cover" />
+              <div className="relative h-[700px] rounded-xl overflow-hidden shadow-lg">
+                <Image src="/images/christmas-market-me.jpeg" alt="Christmas Market at Night" fill className="object-cover" />
               </div>
 
               <p className="text-lg text-gray-700">
-              Food is a huge part of the experience, and I made sure to try some local specialties. I had a delicious mushroom dish and, surprisingly, even enjoyed some ice cream. Lübeck is famous for its marzipan, so if you have a sweet tooth, you have to try some while you’re there. Some of my friends also tried Lübeck’s famous hot beer and mulled wine, which are traditional winter drinks that help keep you warm in the chilly weather. ((I don't drink, so I didn’t try it, but my friends said it was really good!))
+                Food is a huge part of the experience, and I made sure to try some local specialties. I had a delicious mushroom dish and, surprisingly, even enjoyed some ice cream. Lübeck is famous for its marzipan, so if you have a sweet tooth, you have to try some while you&apos;re there. Some of my friends also tried Lübeck&apos;s famous hot beer and mulled wine, which are traditional winter drinks that help keep you warm in the chilly weather. ((I don&apos;t drink, so I didn&apos;t try it, but my friends said it was really good!))
               </p>
 
               <div className="grid grid-cols-3 gap-4">
-                <div className="relative h-48 rounded-xl overflow-hidden shadow-lg">
-                  <Image src="/images/christmas-marzipan.jpg" alt="Christmas Marzipan" fill className="object-cover" />
+                <div className="relative h-[400px] rounded-xl overflow-hidden shadow-lg">
+                  <Image src="/images/christmas-food.jpeg" alt="Christmas Marzipan" fill className="object-cover" />
                 </div>
-                <div className="relative h-48 rounded-xl overflow-hidden shadow-lg">
-                  <Image src="/images/gluhwein.jpg" alt="Glühwein" fill className="object-cover" />
+                <div className="relative h-[400px] rounded-xl overflow-hidden shadow-lg">
+                  <Image src="/images/christmas-last.jpg" alt="Glühwein" fill className="object-cover" />
                 </div>
-                <div className="relative h-48 rounded-xl overflow-hidden shadow-lg">
-                  <Image src="/images/christmas-treats.jpg" alt="Christmas Treats" fill className="object-cover" />
+                <div className="relative h-[400px] rounded-xl overflow-hidden shadow-lg">
+                  <Image src="/images/beer.jpeg" alt="Christmas Treats" fill className="object-cover" />
                 </div>
               </div>
 
               <p className="text-lg text-gray-700">
-              Besides the shopping and food, the Christmas market is a great place for a fun family trips, catching up with friends, or just enjoying a cozy winter evening. The whole city glows with festive lights, making it a perfect spot for pictures. I took so many pictures of the glowing lights, old buildings, and cute market stalls, it really felt like a real cozy Christmas market.
+                Besides the shopping and food, the Christmas market is a great place for a fun family trips, catching up with friends, or just enjoying a cozy winter evening. The whole city glows with festive lights, making it a perfect spot for pictures. I took so many pictures of the glowing lights, old buildings, and cute market stalls, it really felt like a real cozy Christmas market.
               </p>
 
               <p className="text-lg text-gray-700">
-              One important tip: make sure to carry cash! Most stalls do not accept credit cards, so having some euros on hand will save you a lot of trouble. Also, learning a few basic German greetings like "Hallo" (Hello) and "Danke" (Thank you) goes a long way in making your experience even more enjoyable.
+                One important tip: make sure to carry cash! Most stalls do not accept credit cards, so having some euros on hand will save you a lot of trouble. Also, learning a few basic German greetings like "Hallo" (Hello) and "Danke" (Thank you) goes a long way in making your experience even more enjoyable.
               </p>
 
-
-              <div className="relative h-96 rounded-xl overflow-hidden shadow-lg">
-                <Image src="/images/christmas-crowd.jpg" alt="Christmas Market Atmosphere" fill className="object-cover" />
+              <div className="relative h-[600px] rounded-xl overflow-hidden shadow-lg">
+                <Image src="/images/christmas-lubeck.jpeg" alt="Christmas Market Atmosphere" fill className="object-cover" />
               </div>
 
               <p className="text-lg text-gray-700">
-              If you're planning a trip to Germany during the holiday season, Lübeck’s Christmas Market should definitely be on your list. It’s a perfect blend of history, culture, and holiday magic that you won’t forget!
+                If you&apos;re planning a trip to Germany during the holiday season, Lübeck&apos;s Christmas Market should definitely be on your list. It&apos;s a perfect blend of history, culture, and holiday magic that you won&apos;t forget!
               </p>
             </motion.div>
           </div>
