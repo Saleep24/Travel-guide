@@ -111,15 +111,14 @@ export default function HamburgFishMarket() {
               viewport={{ once: true }}
             >
               <p className="text-lg text-gray-700">
-                During my two week trip to Northern Germany, one of the most unique experiences was visiting the historic Hamburg Fish Market. Getting up at 6 AM was little difficult, but the energy of this 300 year old tradition made it absolutely worth it! The market has been running since 1703, making it one of Hamburg&apos;s oldest and most cherished institutions. What amazed me was how this place brings together such a diverse crowd. This mix of people and atmospheres is what makes the Fish Market such a special part of Hamburg&apos;s identity.
-              </p>
+              One of the most unforgettable experiences I had in Hamburg was visiting the historic Fish Market. This place is a living tradition and a true symbol of the city’s culture. The market has been running since 1703, making it one of Hamburg’s oldest and most cherished institutions. Every Sunday morning, all kinds of people, locals, tourists, night owls, and early risers gather here. What amazed me most was how this market brings together such a diverse mix of people and energy.               </p>
 
               <div className="relative h-96 rounded-xl overflow-hidden shadow-lg">
                 <Image src="/images/fish-market-aerial.jpg" alt="Hamburg Fish Market Aerial View" fill className="object-cover" />
               </div>
 
               <p className="text-lg text-gray-700">
-                The most entertaining part was watching the market vendors, known as Marktschreier (market criers). These guys are the absolute play-makers. What fascinated me most was their unique selling technique: they would cleverly mix different fruits in bags, creating these amazing variety packs I&apos;d never seen anywhere else. Anyone travelling to Hamburg or even for local&apos;s getting such a diverse mix of fresh fruits at such a low price would be incrediblee! Even though I couldn&apos;t understand all the German being shouted, their sales pitch and the way they packed those fruit bags was exciting to watch!
+              Walking through the market, I was fascinated by the Marktschreier (market criers). These vendors are the heart of the experience. Their selling techniques are legendary, mixing different fruits into bags and shouting out deals with incredible enthusiasm. Even though I didn’t understand all the German, their energy and skill made it exciting to watch. The way they packed those fruit bags was an art in itself. For anyone visiting Hamburg, getting such a variety of fresh produce at such a low price is an experience in itself.
               </p>
 
               <div className="grid grid-cols-2 gap-4">
@@ -132,7 +131,7 @@ export default function HamburgFishMarket() {
               </div>
 
               <p className="text-lg text-gray-700">
-                The heart of the market happens in the Fischauktionshalle (Fish Auction Hall), a beautiful Art Nouveau building from 1894. This is where my favorite memory was made, dancing with locals to German songs! Honestly speaking, I am not a good dancer, but my muscle memory was activated by our Southern Miss game day spirit. My friends, who were much better dancers than me, taught me some basic moves, and soon enough, I was dancing along with everyone else. The combination of live music, warm atmosphere, and my hot cocoa (perfect for the chilly morning!) created this magical moment that perfectly captured the spirit of Hamburg.
+              The true heartbeat of the market is the Fischauktionshalle (Fish Auction Hall), a stunning Art Nouveau building from 1894. This is where my favorite memory was made, dancing with locals to live German music! Honestly, I’m not a great dancer, but something about the atmosphere made me let go. Maybe it was the warmth of the people, or maybe it was the Southern Miss game day spirit kicking in. My friends, much better dancers than me, showed me some basic moves, and soon enough, I was dancing along with everyone else. The mix of live music, laughter, and my hot cocoa (perfect for the chilly morning!) created a moment I’ll never forget.
               </p>
 
               <div className="relative h-96 rounded-xl overflow-hidden shadow-lg">
@@ -140,7 +139,7 @@ export default function HamburgFishMarket() {
               </div>
 
               <p className="text-lg text-gray-700">
-                Warming up with my hot cocoa while watching the the market was such a cozy experience. The market is a tradition for locals and tourists alike. I spent a good hour just taking photos, observing the surroundings, watching the vendors&apos; entertaining sales techniques and also communicating with the locals.
+              Sipping my hot cocoa while watching the sunrise over the Elbe River was the perfect way to take it all in. I spent time taking photos, observing the vendors’ entertaining sales techniques, and try chatting with locals in broken German-English language. Every detail, from the smell of fresh fish to the sound of laughter, made this experience feel truly special.
               </p>
 
               <div className="grid grid-cols-3 gap-4">
@@ -156,8 +155,7 @@ export default function HamburgFishMarket() {
               </div>
 
               <p className="text-lg text-gray-700">
-                For anyone visiting Hamburg, I highly recommend experiencing the Fish Market, even if you have to cut your Saturday night short! It runs every Sunday from 7 AM to 9:30 AM in winter. Getting there is easy, just take the U3 to Landungsbrücken or S1/S3 to Reeperbahn station. Pro tip: arrive early to catch the sunrise over the Elbe River, it creates the most magical backdrop for photos. Also, bring cash as most vendors don&apos;t accept cards, and don&apos;t be afraid to engage with the sellers (bargain!).
-              </p>
+              If you ever find yourself in Hamburg, visiting the Fish Market is a must. Even if it means cutting your Saturday night short, waking up early is absolutely worth it. The market runs every Sunday from 7 AM to 9:30 AM in winter. Getting there is easy, just take the U3 to Landungsbrücken or the S1/S3 to Reeperbahn station. Pro tip: arrive early to catch the sunrise over the Elbe, it’s a breathtaking sight. Also, bring cash, as most vendors don’t accept cards, and don’t be afraid to engage with the sellers (bargain!). The energy, the tradition, and the community make the Hamburg Fish Market one of the most unforgettable experiences in the city.              </p>
 
               <div className="relative h-96 rounded-xl overflow-hidden shadow-lg">
                 <Image src="/images/harbor-sunrise.jpg" alt="Hamburg Harbor Sunrise" fill className="object-cover" />
