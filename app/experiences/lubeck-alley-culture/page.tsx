@@ -111,60 +111,40 @@ export default function LubeckAlleyCulture() {
               viewport={{ once: true }}
             >
               <p className="text-lg text-gray-700">
-              Walking through Lübeck's famous alleys and courtyards was one of the most unique experiences I had in Germany, and I highly recommend you check it out when you visit. These narrow passages feel like something straight out of a fairy tale, but they also tell a fascinating story about how Lübeck adapted to its growing population during its golden age as the capital of the Hanseatic League. Since the city is surrounded by water, they had to get creative, so they built a network of tight alleys and courtyards to house the working-class residents of this wealthy trading hub.
+                Walking through Lübeck&apos;s famous alleys and courtyards was one of the most unique experiences I had in Germany, and I highly recommend you check it out when you visit. These narrow passages feel like something straight out of a fairy tale, but they also tell a fascinating story about how Lübeck adapted to its growing population during its golden age as the capital of the Hanseatic League. Since the city is surrounded by water, they had to get creative, so they built a network of tight alleys and courtyards to house the working-class residents of this wealthy trading hub.
               </p>
 
               <div className="relative h-96 rounded-xl overflow-hidden shadow-lg">
-                <Image src="/images/lubeck-alley-wide.jpg" alt="Lübeck Alley Overview" fill className="object-cover" />
+                <Image src="/images/lubeck-alley-opening.jpeg" alt="Lübeck Alley Overview" fill className="object-cover" />
               </div>
 
               <p className="text-lg text-gray-700">
-              What fascinated me the most was how these alleys have changed over time. Originally built for the working class, today they’ve become highly desirable residences for people who want to experience traditional alley culture. It’s amazing to see how history has been preserved while also adapting to modern life. Some alleys are private, but others are open to visitors at certain times.
+                What fascinated me the most was how these alleys have changed over time. Originally built for the working class, today they&apos;ve become highly desirable residences for people who want to experience traditional alley culture. It&apos;s amazing to see how history has been preserved while also adapting to modern life. Some alleys are private, but others are open to visitors at certain times.
               </p>
 
               <div className="grid grid-cols-2 gap-4">
                 <div className="relative h-64 rounded-xl overflow-hidden shadow-lg">
-                  <Image src="/images/fuchtingshof.jpg" alt="Füchtingshof" fill className="object-cover" />
+                  <Image src="/images/alley-lubeck.jpeg" alt="Füchtingshof" fill className="object-cover" />
                 </div>
                 <div className="relative h-64 rounded-xl overflow-hidden shadow-lg">
-                  <Image src="/images/engelsgrube.jpg" alt="Engelsgrube" fill className="object-cover" />
+                  <Image src="/images/mosquito.jpeg" alt="Engelsgrube" fill className="object-cover" />
                 </div>
               </div>
 
               <p className="text-lg text-gray-700">
-              Walking through these narrow corridors was honestly one of my favorite moments in Lübeck. Some of the passages are so tight that only one or two people can fit at a time, which gave me that classic European charm I’d always imagined. But what stood out even more was the sense of community here. Unlike modern apartment buildings where people barely know their neighbors, these alleys still foster a close-knit atmosphere where people actually connect with each other.
+                Walking through these narrow corridors was honestly one of my favorite moments in Lübeck. Some of the passages are so tight that only one or two people can fit at a time, which gave me that classic European charm I&apos;d always imagined. But what stood out even more was the sense of community here. Unlike modern apartment buildings where people barely know their neighbors, these alleys still foster a close-knit atmosphere where people actually connect with each other.
               </p>
 
               <div className="relative h-96 rounded-xl overflow-hidden shadow-lg">
-                <Image src="/images/alley-morning.jpg" alt="Morning Light in Alley" fill className="object-cover" />
+                <Image src="/images/alley-morning.jpeg" alt="Morning Light in Alley" fill className="object-cover" />
               </div>
 
               <p className="text-lg text-gray-700">
-              These alleys are  a living part of Lübeck’s identity. Back in the days of the Hanseatic League, when Lübeck was one of Europe’s most powerful cities, these alleys represented both prosperity and social structure. Now, they show how historical preservation can create vibrant, livable spaces instead of just being tourist sites.
+                These alleys are a living part of Lübeck&apos;s identity. Back in the days of the Hanseatic League, when Lübeck was one of Europe&apos;s most powerful cities, these alleys represented both prosperity and social structure. Now, they show how historical preservation can create vibrant, livable spaces instead of just being tourist sites. If you visit Lübeck, you should definitely take some time to explore these alleys. While some are private, many are open to the public at certain hours. Walking through them gives you a understanding into both the past and present of the city.
               </p>
 
-              <div className="grid grid-cols-3 gap-4">
-                <div className="relative h-48 rounded-xl overflow-hidden shadow-lg">
-                  <Image src="/images/alley-cafe.jpg" alt="Alley Cafe" fill className="object-cover" />
-                </div>
-                <div className="relative h-48 rounded-xl overflow-hidden shadow-lg">
-                  <Image src="/images/alley-shop.jpg" alt="Artisan Shop" fill className="object-cover" />
-                </div>
-                <div className="relative h-48 rounded-xl overflow-hidden shadow-lg">
-                  <Image src="/images/alley-life.jpg" alt="Modern Life in Alleys" fill className="object-cover" />
-                </div>
-              </div>
-
               <p className="text-lg text-gray-700">
-              If you visit Lübeck, you should definitely take some time to explore these alleys. While some are private, many are open to the public at certain hours. Walking through them gives you a understanding into both the past and present of the city.
-              </p>
-
-              <div className="relative h-96 rounded-xl overflow-hidden shadow-lg">
-                <Image src="/images/alley-map.jpg" alt="Alley Tour Map" fill className="object-cover" />
-              </div>
-
-              <p className="text-lg text-gray-700">
-              In a world where we often don’t even know our neighbors, Lübeck’s alleys are a reminder that architecture can shape human connection. These narrow streets and shared courtyards preserve both history and a lifestyle that values community over convenience. If you’re in Germany, don’t miss this chance to step into a piece of living history!
+                In a world where we often don&apos;t even know our neighbors, Lübeck&apos;s alleys are a reminder that architecture can shape human connection. These narrow streets and shared courtyards preserve both history and a lifestyle that values community over convenience. If you&apos;re in Germany, don&apos;t miss this chance to step into a piece of living history!
               </p>
             </motion.div>
           </div>
