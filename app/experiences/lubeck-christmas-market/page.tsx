@@ -111,7 +111,7 @@ export default function LubeckChristmasMarket() {
               viewport={{ once: true }}
             >
               <p className="text-lg text-gray-700">
-                Lübeck&apos;s Christmas Market transforms the medieval city center into a magical winter wonderland. Set against the backdrop of the UNESCO World Heritage old town, it&apos;s one of the most atmospheric Christmas markets in Northern Germany. Trust me, your Instagram followers will love the cozy vibes!
+              One of the most unforgettable experiences I had in Germany was visiting the Lübeck Christmas Market. This historic market, which started in the 17th century, is one of the oldest and most famous in Germany. Every year, people from all over Germany, Europe, and even other parts of the world come to Lübeck to enjoy the Lübeck's magic. The market spreads through the city’s old streets, filling the air with the smell of roasted almonds, warm spiced wine, and festive vibes.
               </p>
 
               <div className="relative h-96 rounded-xl overflow-hidden shadow-lg">
@@ -119,7 +119,7 @@ export default function LubeckChristmasMarket() {
               </div>
 
               <p className="text-lg text-gray-700">
-                The market spreads across several locations in the old town, with the main area being at the historic Town Hall Square. Each area has its own character - from the traditional crafts market in front of St. Mary&apos;s Church to the magical Fairy Tale Forest in the Schrangen quarter.
+              Lübeck, once the capital of the Hanseatic League, has long been known for its rich history and beautiful architecture. The Christmas market tradition started centuries ago as a way for local craftsmen and merchants to sell their goods during the holiday season. Today, it has grown into a grand celebration, with beautifully decorated stalls selling handmade gifts, festive decorations, and delicious seasonal treats. Whether you want to find special gifts or just enjoy the festive vibe, the Lübeck Christmas Market is the place to be.
               </p>
 
               <div className="grid grid-cols-2 gap-4">
@@ -132,7 +132,7 @@ export default function LubeckChristmasMarket() {
               </div>
 
               <p className="text-lg text-gray-700">
-                Pro tip: Visit after sunset when the entire market is illuminated with thousands of lights. The historic buildings provide an incredible backdrop for photos, especially with the famous Holsten Gate lit up in the distance. The golden hour just before sunset is perfect for capturing the magical atmosphere!
+              I visited the market on its last day, which turned out to be the best time to grab some great deals on decorations and souvenirs. I picked up some beautiful handcrafted ornaments and a Christmas globe at a bargain. The stalls were filled with intricate wooden carvings, festive candles, and unique gifts that you won’t find anywhere else. If you love Christmas decorations, this market is a dream come true.
               </p>
 
               <div className="relative h-96 rounded-xl overflow-hidden shadow-lg">
@@ -140,7 +140,7 @@ export default function LubeckChristmasMarket() {
               </div>
 
               <p className="text-lg text-gray-700">
-                Don&apos;t miss trying the local specialties! The famous Lübeck marzipan is a must, and during Christmas time, it comes in festive shapes and flavors. Warm up with a cup of Glühwein (mulled wine) - they serve it in cute collectible mugs that make great souvenirs.
+              Food is a huge part of the experience, and I made sure to try some local specialties. I had a delicious mushroom dish and, surprisingly, even enjoyed some ice cream. Lübeck is famous for its marzipan, so if you have a sweet tooth, you have to try some while you’re there. Some of my friends also tried Lübeck’s famous hot beer and mulled wine, which are traditional winter drinks that help keep you warm in the chilly weather. ((I don't drink, so I didn’t try it, but my friends said it was really good!))
               </p>
 
               <div className="grid grid-cols-3 gap-4">
@@ -156,12 +156,21 @@ export default function LubeckChristmasMarket() {
               </div>
 
               <p className="text-lg text-gray-700">
-                The market typically runs from late November until December 30th. Opening hours are usually 11 AM to 9 PM (longer on weekends). It&apos;s easily accessible from the main train station - just follow the crowds and the smell of roasted almonds! For the best experience, visit on a weekday evening when it&apos;s less crowded.
+              Besides the shopping and food, the Christmas market is a great place for a fun family trips, catching up with friends, or just enjoying a cozy winter evening. The whole city glows with festive lights, making it a perfect spot for pictures. I took so many pictures of the glowing lights, old buildings, and cute market stalls, it really felt like a real cozy Christmas market.
               </p>
+
+              <p className="text-lg text-gray-700">
+              One important tip: make sure to carry cash! Most stalls do not accept credit cards, so having some euros on hand will save you a lot of trouble. Also, learning a few basic German greetings like "Hallo" (Hello) and "Danke" (Thank you) goes a long way in making your experience even more enjoyable.
+              </p>
+
 
               <div className="relative h-96 rounded-xl overflow-hidden shadow-lg">
                 <Image src="/images/christmas-crowd.jpg" alt="Christmas Market Atmosphere" fill className="object-cover" />
               </div>
+
+              <p className="text-lg text-gray-700">
+              If you're planning a trip to Germany during the holiday season, Lübeck’s Christmas Market should definitely be on your list. It’s a perfect blend of history, culture, and holiday magic that you won’t forget!
+              </p>
             </motion.div>
           </div>
         </section>
