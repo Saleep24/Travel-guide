@@ -111,7 +111,7 @@ export default function StreetArtBerlin() {
               viewport={{ once: true }}
             >
               <p className="text-lg text-gray-700">
-                One of the most unforgettable experiences I had in Berlin involved exploring the East Side Gallery. This place is a living reminder of the city&apos;s history and a true symbol of freedom.
+              One of the most unforgettable experiences I had in Berlin involved exploring the East Side Gallery. This place is a living reminder of the citys history and a true symbol of freedom. The Berlin Wall once divided a country, separating East and West Germany for almost 30 years. Built in 1961 by the East German government to stop people from fleeing to the democratic West, the wall stood as a harsh reminder of division until its fall on November 9, 1989. Today, every painting on this long stretch of wall speaks of hope, unity, and the power of expression. For local Germans, this wall carries deep personal meaning, and people from all over the world come here to see how art has turned a symbol of separation into a street of resilience, hope, and togetherness. 
               </p>
 
               <div className="relative h-96 rounded-xl overflow-hidden shadow-lg">
