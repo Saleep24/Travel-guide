@@ -5,6 +5,7 @@ import { motion, useScroll, useTransform } from "framer-motion"
 import Image from "next/image"
 import Link from "next/link"
 import { Linkedin, ArrowLeft, Instagram } from "lucide-react"
+import { lubeckSpots as instaSpots } from '../data/spots'
 
 // 1. HERO SECTION
 function HeroSection() {
@@ -66,39 +67,6 @@ interface SpotData {
   image: string;
   description: string;
 }
-
-export const instaSpots: SpotData[] = [
-  {
-    name: "The Holsten Gate",
-    image: "/images/Holstentor_lubeck.jpeg",
-    description:
-      "The Holsten Gate is Lübeck's most iconic landmark, with its fairy-tale like towers and medieval charm making it a must visit photo spot. It's as symbolic to Lübeck as the Eiffel Tower is to Paris.",
-  },
-  {
-    name: "St. Mary's Church",
-    image: "/images/stmary-lubeck.jpeg",
-    description:
-      "St. Mary's Church is one of the most beautiful churches I've ever seen both inside and outside. The architecture alone makes it worth visiting, and honestly, any trip to Europe feels incomplete without visiting a historic church. Plus, there's a student discount, so why not?",
-  },
-  {
-    name: "Lübeck narrow streets",
-    image: "/images/lubeck-streets.jpeg",
-    description:
-      "Lübeck's narrow streets look exactly like the Europe you see in pictures, stone-paved roads, cozy alleyways, and beautiful old buildings all around. Bigger cities don't have this kind of charm, so if you're in Northern Germany, take a walk and snap some pics for your Instagram.",
-  },
-  {
-    name: "European Hansemuseum",
-    image: "/images/hanse-museum.JPEG",
-    description:
-      "Look around and take pictures with old Hanseatic traders' clothes, ornaments, and weapons on display. The best part? There's a photo booth where you can dress up and get that classic Hanseatic vibe, especially if you're with friends. Quick tip: this is one of the highest points in Lübeck, so if you're here on New Year's Eve, head to the top for an amazing view of the fireworks over the harbor and city.",
-  },
-  {
-    name: "Baltic Sea",
-    image: "/images/baltic-sea.jpeg",
-    description:
-      "If you're in Northern Germany, don't miss the Baltic Sea, less than a 30 minute drive from Lübeck. It's the closest sea to Northern Germany, where you can see ships, old pirate ships, lighthouses, and even stop by marzipan shops.",
-  },
-]
 
 // 3. TIMELINE ITEM COMPONENT
 function TimelineItem({ spot, index }: { spot: SpotData; index: number }) {
