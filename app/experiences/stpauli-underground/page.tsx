@@ -114,8 +114,8 @@ export default function StPauliUnderground() {
                 Hey, let me tell you about St. Pauli, you know, that famous district in Hamburg everyone talks about! Before I share my experience, you&apos;ve got to know a bit about its history. This neighborhood has always been Hamburg&apos;s rebellious child, starting as a hangout for sailors back in the day. It&apos;s pretty wild to think that this place has been the heart of Hamburg&apos;s alternative scene for over a century!
               </p>
 
-              <div className="relative h-96 rounded-xl overflow-hidden shadow-lg">
-                <Image src="/images/st-pauli-street.jpeg" alt="St. Pauli Street Scene" fill className="object-cover" />
+              <div className="relative h-[600px] rounded-xl overflow-hidden shadow-lg">
+                <Image src="/images/hans.jpeg" alt="St. Pauli Street Scene" fill className="object-cover" />
               </div>
 
               <p className="text-lg text-gray-700">
@@ -123,11 +123,11 @@ export default function StPauliUnderground() {
               </p>
 
               <div className="grid grid-cols-2 gap-4">
-                <div className="relative h-64 rounded-xl overflow-hidden shadow-lg">
-                  <Image src="/images/hans.jpeg" alt="Street Art" fill className="object-cover" />
+                <div className="relative h-[500px] rounded-xl overflow-hidden shadow-lg">
+                  <Image src="/images/captain.jpeg" alt="Street Art" fill className="object-cover" />
                 </div>
-                <div className="relative h-64 rounded-xl overflow-hidden shadow-lg">
-                  <Image src="/images/bar.jpeg" alt="Alternative Cafe" fill className="object-cover" />
+                <div className="relative h-[500px] rounded-xl overflow-hidden shadow-lg">
+                  <Image src="/images/st-pauli-us.jpeg" alt="Alternative Cafe" fill className="object-cover" />
                 </div>
               </div>
 
@@ -135,8 +135,8 @@ export default function StPauliUnderground() {
                 Okay, now let me tell you about my visit, it was absolutely mind-blowing! The whole place just buzzes with this incredible energy. You&apos;ve got street art everywhere, music pouring out of bars, and the most diverse crowd you&apos;ll ever see. I actually tried visiting this famous street called Herbertstraße during the day with my friends (fun fact: it&apos;s the only street in Hamburg that still has the vibe like Amsterdam&apos;s Red Light District), but we found out it only opens after 6:30 PM.
               </p>
 
-              <div className="relative h-96 rounded-xl overflow-hidden shadow-lg">
-                <Image src="/images/band.jpeg" alt="Flohschanze Market" fill className="object-cover" />
+              <div className="relative h-[700px] rounded-xl overflow-hidden shadow-lg">
+                <Image src="/images/the-street-big.jpeg" alt="Flohschanze Market" fill className="object-cover" />
               </div>
 
               <p className="text-lg text-gray-700">
@@ -144,14 +144,14 @@ export default function StPauliUnderground() {
               </p>
 
               <div className="grid grid-cols-3 gap-4">
-                <div className="relative h-48 rounded-xl overflow-hidden shadow-lg">
-                  <Image src="/images/molotow.jpg" alt="Molotow Club" fill className="object-cover" />
+                <div className="relative h-[400px] rounded-xl overflow-hidden shadow-lg">
+                  <Image src="/images/band-big.jpeg" alt="Molotow Club" fill className="object-cover" />
                 </div>
-                <div className="relative h-48 rounded-xl overflow-hidden shadow-lg">
-                  <Image src="/images/park-fiction.jpg" alt="Park Fiction" fill className="object-cover" />
+                <div className="relative h-[400px] rounded-xl overflow-hidden shadow-lg">
+                  <Image src="/images/latino-bar.jpeg" alt="Park Fiction" fill className="object-cover" />
                 </div>
-                <div className="relative h-48 rounded-xl overflow-hidden shadow-lg">
-                  <Image src="/images/pudel-club.jpg" alt="Golden Pudel Club" fill className="object-cover" />
+                <div className="relative h-[400px] rounded-xl overflow-hidden shadow-lg">
+                  <Image src="/images/gay-bar.jpeg" alt="Golden Pudel Club" fill className="object-cover" />
                 </div>
               </div>
 
@@ -159,8 +159,8 @@ export default function StPauliUnderground() {
                 Oh, and if you&apos;re planning to visit (which you totally should!), here&apos;s a pro tip: take the U3 to either St. Pauli or Reeperbahn station, it&apos;s super easy to find. Just remember that the real action starts after sunset, especially around 6:30 PM when everything opens up. And hey, even though it&apos;s generally safe, maybe stick with your friends if you&apos;re staying out late, you know, just like any other party district!
               </p>
 
-              <div className="relative h-96 rounded-xl overflow-hidden shadow-lg">
-                <Image src="/images/stpauli-night.jpg" alt="St. Pauli at Night" fill className="object-cover" />
+              <div className="relative h-[600px] rounded-xl overflow-hidden shadow-lg">
+                <Image src="/images/curry.jpeg" alt="St. Pauli at Night" fill className="object-cover" />
               </div>
 
               <p className="text-lg text-gray-700">
