@@ -67,7 +67,7 @@ interface SpotData {
   description: string;
 }
 
-const instaSpots: SpotData[] = [
+export const instaSpots: SpotData[] = [
   {
     name: "The Holsten Gate",
     image: "/images/Holstentor_lubeck.jpeg",

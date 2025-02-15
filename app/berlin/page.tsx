@@ -61,7 +61,13 @@ function HeroSection() {
 }
 
 // 2. INSTAGRAM SPOTS DATA
-const instaSpots = [
+interface SpotData {
+  name: string;
+  image: string;
+  description: string;
+}
+
+export const instaSpots: SpotData[] = [
   {
     name: "Brandenburg Gate",
     image: "/images/brandenburg-gate.jpeg",
