@@ -5,6 +5,7 @@ import { motion, useScroll, useTransform } from "framer-motion"
 import Image from "next/image"
 import Link from "next/link"
 import { Linkedin, ArrowLeft, Instagram } from "lucide-react"
+import { hamburgSpots as instaSpots } from '../data/spots'
 
 // 1. HERO SECTION
 function HeroSection() {
@@ -66,45 +67,6 @@ interface SpotData {
   image: string;
   description: string;
 }
-
-export const instaSpots: SpotData[] = [
-  {
-    name: "Elbphilharmonie",
-    image: "/images/glass-house-concert.jpeg",
-    description:
-      "You absolutely can't miss the Elbphilharmonie when you're in Hamburg, it's the city's new landmark, and trust me, it will blow you away. The concert hall's wave-like glass facade and futuristic design make it stand out on the harbor skyline. Definitely take the trip to the Plaza (it's free!), because the panoramic views of the city and the Elbe River are insane. Perfect spot for an epic photo, and you'll be talking about the views for days!",
-  },
-  {
-    name: "Speicherstadt",
-    image: "/images/warehouse-district-hamburg.jpeg",
-    description:
-      "Speicherstadt is probably one of the coolest places you eill visit in Hamburg. It is the largest warehouse district in the world and a UNESCO World Heritage site. The red brick buildings and cute canals look like something straight out of a fairy tale, and trust me it's hard to take a bad photo here. ",
-  },
-  {
-    name: "Reeperbahn",
-    image: "/images/reeperbahn.JPG",
-    description:
-      "You seriously can't miss the Reeperbahn when you're in Hamburg, it's the city's ultimate nightlife hotspot, and trust me, it'll leave you buzzing. This legendary street is full with neon lights, vibrant bars, and edgy street art, making it a perfect spots for some seriously epic photos. And here's a quick tip: if you're curious about checking out the one and only street open exclusively to males, make sure you look up the opening hours (because it opens from 6 pm only). Oh, and while you're there, don't forget to visit to Boutique Bizarre, the largest sex shop in Europe, right on the Reeperbahn.",
-  },
-  {
-    name: "St. Nikolia Mermorial",
-    image: "/images/st-nikolia-hamburg.jpeg",
-    description:
-      "If you're in Hamburg, you have to check out St. Nikolai Memorial, it's one of the best spots for a breathtaking city view. This place has a deep history, as it was heavily bombed during WWII, and now stands as a hauntingly beautiful reminder of the past. The real highlight? Taking the glass elevator up to the viewing platform. The panoramic view of Hamburg from up there is absolutely unreal, especially on a moody, rainy day when the city lights reflect off the wet streets.",
-  },
-  {
-    name: "Planten un Blomen",
-    image: "/images/planted-un-me.jpeg",
-    description:
-      "Okay, real talk, Planten un Blomen is magical in winter. I went when the ponds were totally frozen, and it looked like a scene from Frozen. The Japanese garden gets this quiet, almost mystical vibe with frost covered trees. Even without flowers, the frozen ponds and empty benches give off major 'moody aesthetic' energy. Pro tip: Bring a thermos of hot chocolate, snap a pic of your reflection in the ice, and pretend you're in a Nordic indie film.",
-  },
-  {
-    name: "Rathaus (Town House)",
-    image: "/images/rathaus.jpeg",
-    description:
-      "You absolutely can't miss the Rathaus when you're in Hamburg, and trust me, the inside is even more stunning than the outside. Once you step in, you'll be blown away by its elegant interiors and historic details. Be sure to head upstairs, where you'll capture that (European vibe) with epic photo spots.",
-  },
-]
 
 // 3. TIMELINE ITEM COMPONENT
 function TimelineItem({ spot, index }: { spot: SpotData; index: number }) {
