@@ -116,7 +116,7 @@ export default function Contact() {
                   className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative"
                 >
                   <p className="font-bold">Thank you for your message!</p>
-                  <p>I'll get back to you soon!</p>
+                  <p>I&apos;ll get back to you soon!</p>
                 </motion.div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-4">

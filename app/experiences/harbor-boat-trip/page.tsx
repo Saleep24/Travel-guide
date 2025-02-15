@@ -140,7 +140,7 @@ export default function HarborBoatTrip() {
               </div>
 
               <p className="text-lg text-gray-700">
-                One of the most intriguing parts was learning about the port&apos;s multicultural history, particularly the story of Chinese immigrants in Hamburg&apos;s maritime past. They were paid one-third of what German workers earned, but interestingly, the used to save in pounds rather than marks (before German's currency), and that led many of them became wealthy after Germany&apos;s hyperinflation. These stories of adaptation and survival also highlights the cultures and people harbor invited in Germany.
+                One of the most intriguing parts was learning about the port&apos;s multicultural history, particularly the story of Chinese immigrants in Hamburg&apos;s maritime past. They were paid one-third of what German workers earned, but interestingly, the used to save in pounds rather than marks (before German&apos;s currency), and that led many of them became wealthy after Germany&apos;s hyperinflation. These stories of adaptation and survival also highlights the cultures and people harbor invited in Germany.
               </p>
 
               <div className="grid grid-cols-3 gap-4">

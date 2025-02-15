@@ -170,6 +170,10 @@ export default function LubeckChristmasMarket() {
               <p className="text-lg text-gray-700">
                 If you&apos;re planning a trip to Germany during the holiday season, Lübeck&apos;s Christmas Market should definitely be on your list. It&apos;s a perfect blend of history, culture, and holiday magic that you won&apos;t forget!
               </p>
+
+              <p className="text-lg text-gray-700">
+                The market&apos;s most famous attraction is the &quot;Flying Santa&quot; who soars over the market on his sleigh at regular intervals. The &quot;Fairytale Forest&quot; is another highlight, where classic stories come alive through illuminated displays.
+              </p>
             </motion.div>
           </div>
         </section>

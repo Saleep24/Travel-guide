@@ -112,8 +112,15 @@ const instaSpots = [
   },
 ]
 
+// Add type definition before the timeline item component
+interface SpotData {
+  name: string
+  image: string
+  description: string
+}
+
 // 3. TIMELINE ITEM COMPONENT
-function TimelineItem({ spot, index }: { spot: any; index: number }) {
+function TimelineItem({ spot, index }: { spot: SpotData; index: number }) {
   const isLeft = index % 2 === 0
 
   return (

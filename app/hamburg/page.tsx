@@ -61,7 +61,13 @@ function HeroSection() {
 }
 
 // 2. INSTAGRAM SPOTS DATA
-const instaSpots = [
+interface SpotData {
+  name: string;
+  image: string;
+  description: string;
+}
+
+const instaSpots: SpotData[] = [
   {
     name: "Elbphilharmonie",
     image: "/images/glass-house-concert.jpeg",
@@ -84,13 +90,13 @@ const instaSpots = [
     name: "St. Nikolia Mermorial",
     image: "/images/st-nikolia-hamburg.jpeg",
     description:
-      "If you're in Hamburg, you have to check out St. Nikolai Memorial, it’s one of the best spots for a breathtaking city view. This place has a deep history, as it was heavily bombed during WWII, and now stands as a hauntingly beautiful reminder of the past. The real highlight? Taking the glass elevator up to the viewing platform. The panoramic view of Hamburg from up there is absolutely unreal, especially on a moody, rainy day when the city lights reflect off the wet streets.",
+      "If you're in Hamburg, you have to check out St. Nikolai Memorial, it's one of the best spots for a breathtaking city view. This place has a deep history, as it was heavily bombed during WWII, and now stands as a hauntingly beautiful reminder of the past. The real highlight? Taking the glass elevator up to the viewing platform. The panoramic view of Hamburg from up there is absolutely unreal, especially on a moody, rainy day when the city lights reflect off the wet streets.",
   },
   {
     name: "Planten un Blomen",
     image: "/images/planted-un-me.jpeg",
     description:
-      "Okay, real talk, Planten un Blomen is magical in winter. I went when the ponds were totally frozen, and it looked like a scene from Frozen. The Japanese garden gets this quiet, almost mystical vibe with frost covered trees. Even without flowers, the frozen ponds and empty benches give off major ‘moody aesthetic’ energy. Pro tip: Bring a thermos of hot chocolate, snap a pic of your reflection in the ice, and pretend you’re in a Nordic indie film.",
+      "Okay, real talk, Planten un Blomen is magical in winter. I went when the ponds were totally frozen, and it looked like a scene from Frozen. The Japanese garden gets this quiet, almost mystical vibe with frost covered trees. Even without flowers, the frozen ponds and empty benches give off major 'moody aesthetic' energy. Pro tip: Bring a thermos of hot chocolate, snap a pic of your reflection in the ice, and pretend you're in a Nordic indie film.",
   },
   {
     name: "Rathaus (Town House)",
@@ -101,7 +107,7 @@ const instaSpots = [
 ]
 
 // 3. TIMELINE ITEM COMPONENT
-function TimelineItem({ spot, index }: { spot: any; index: number }) {
+function TimelineItem({ spot, index }: { spot: SpotData; index: number }) {
   const isLeft = index % 2 === 0
 
   return (
