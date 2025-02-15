@@ -172,7 +172,7 @@ export default function LubeckChristmasMarket() {
               </p>
 
               <p className="text-lg text-gray-700">
-                The market&apos;s most famous attraction is the &quot;Flying Santa&quot; who soars over the market on his sleigh at regular intervals. The &quot;Fairytale Forest&quot; is another highlight, where classic stories come alive through illuminated displays.
+                The market&apos;s most famous attraction is the Flying Santa, who soars over the market on his sleigh at regular intervals. The Fairytale Forest is another highlight, where classic stories come alive through illuminated displays.
               </p>
             </motion.div>
           </div>

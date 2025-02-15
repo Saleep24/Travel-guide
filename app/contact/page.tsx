@@ -52,7 +52,7 @@ export default function Contact() {
                       className="rounded-lg shadow-md mr-6"
                     />
                     <div>
-                      <h2 className="text-2xl font-semibold mb-2">Hello everyone, I'm Saleep</h2>
+                      <h2 className="text-2xl font-semibold mb-2">Hello everyone, I&apos;m Saleep</h2>
                       <p className="text-sm mb-4">
                         A Computer Science sophomore studying at the University of Southern Mississippi.
                       </p>

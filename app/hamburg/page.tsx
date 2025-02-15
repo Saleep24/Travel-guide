@@ -41,7 +41,7 @@ function HeroSection() {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-xl md:text-3xl text-gray-200 drop-shadow-md mb-8"
         >
-          Germany's Gateway to the World
+          Germany&apos;s Gateway to the World
         </motion.p>
         <motion.div
           initial={{ y: 20, opacity: 0 }}
