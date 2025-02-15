@@ -160,7 +160,7 @@ export default function LubeckChristmasMarket() {
               </p>
 
               <p className="text-lg text-gray-700">
-                One important tip: make sure to carry cash! Most stalls do not accept credit cards, so having some euros on hand will save you a lot of trouble. Also, learning a few basic German greetings like "Hallo" (Hello) and "Danke" (Thank you) goes a long way in making your experience even more enjoyable.
+                One important tip: make sure to carry cash! Most stalls do not accept credit cards, so having some euros on hand will save you a lot of trouble. Also, learning a few basic German greetings like Hallo (Hello) and Danke (Thank you) goes a long way in making your experience even more enjoyable.
               </p>
 
               <div className="relative h-[600px] rounded-xl overflow-hidden shadow-lg">
@@ -172,7 +172,7 @@ export default function LubeckChristmasMarket() {
               </p>
 
               <p className="text-lg text-gray-700">
-                The market&apos;s most famous attraction is the Flying Santa, who soars over the market on his sleigh at regular intervals. The Fairytale Forest is another highlight, where classic stories come alive through illuminated displays.
+                The market&apos;s most famous attraction is the &ldquo;Flying Santa&rdquo;, who soars over the market on his sleigh at regular intervals. The &ldquo;Fairytale Forest&rdquo; is another highlight, where classic stories come alive through illuminated displays.
               </p>
             </motion.div>
           </div>
