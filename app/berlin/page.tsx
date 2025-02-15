@@ -5,6 +5,7 @@ import { motion, useScroll, useTransform } from "framer-motion"
 import Image from "next/image"
 import Link from "next/link"
 import { Linkedin, ArrowLeft, Instagram } from "lucide-react"
+import { berlinSpots as instaSpots } from '../data/spots'
 
 // 1. HERO SECTION
 function HeroSection() {
@@ -59,64 +60,6 @@ function HeroSection() {
     </section>
   )
 }
-
-// 2. INSTAGRAM SPOTS DATA
-interface SpotData {
-  name: string;
-  image: string;
-  description: string;
-}
-
-export const instaSpots: SpotData[] = [
-  {
-    name: "Brandenburg Gate",
-    image: "/images/brandenburg-gate.jpeg",
-    description:
-      "Okay, you absolutely can't skip the Brandenburg Gate - it's like Berlin's Eiffel Tower! The best time to visit? Either super early morning when there's barely anyone around (perfect for those main character moments), or at sunset when the golden light hits just right. Pro tip: walk a bit further back and get that perfect shot where you're 'holding' the gate. Trust me, it's going to be your most liked photo from Berlin!",
-  },
-  {
-    name: "Reichstag Building",
-    image: "/images/reichstag.jpeg",
-    description:
-      "The Reichstag Building is literally insane! The glass dome on top is giving futuristic vibes, but make sure to book your free tickets online in advance (thank me later). The best part? You can walk up the spiral ramp inside the dome for some seriously epic shots of Berlin's skyline. And if you're feeling fancy, there's a rooftop restaurant where you can grab a coffee with Parliament views. Student discount available!",
-  },
-  {
-    name: "East Side Gallery",
-    image: "/images/berlin-street-art.jpg",
-    description:
-      "If you're into street art and history, the East Side Gallery should be your favorite place in entire Europe! It's the longest remaining stretch of the Berlin Wall, and now it's basically the world's longest open air gallery. My favorite part? The famous 'The Kiss' painting, you know, the one with the two politicians kissing. The whole wall is super colorful and perfect for those artsy Instagram shots. Just avoid the middle of the day when it gets super crowded!",
-  },
-  {
-    name: "Memorial to the Murdered Jews",
-    image: "/images/holocaust-memorial.jpeg",
-    description:
-      "The Holocaust Memorial is one of the most powerful places you'll visit in Berlin. It's this massive field of concrete blocks that creates this really moving atmosphere. While it's important to be respectful (it's not just a photo op), you can capture some really meaningful shots that show the scale and impact of this place. The underground information center is a must visit too, it really puts everything into perspective.",
-  },
-  {
-    name: "Olympic Stadium",
-    image: "/images/olympic-stadium.jpeg",
-    description:
-      "The Olympic Stadium is huge and has some serious history (it hosted the 1936 Olympics). The architecture gives ancient Roman colosseum meets modern sports arena vibe. And the best part, you can actually climb up to the roof for some insane panoramic views of Berlin, perfect for those 'top of the world' shots. And if you're lucky, you might catch a football match or concert here! (I did not)",
-  },
-  {
-    name: "German Spy Museum",
-    image: "/images/spy-museum.JPEG",
-    description:
-      "Okay, the Spy Museum is literally the most fun museum ever! They've got this laser maze room where you can pretend you're in a spy movie (perfect for Reels or TikToks). There's also a photo booth where you can dress up as a spy which gives James Bond vibes! Definitely bring your friends here, it's way more fun as a group. Pro tip: try the lie detector test, it's superhilarious!",
-  },
-  {
-    name: "Lustgarten",
-    image: "/images/lustgarten.jpeg",
-    description:
-      "Lustgarten is a gorgeous park right in the heart of Museum Island. It's surrounded by some of Berlin's most iconic buildings, and the lawn is perfect for those candid picnic shots. Quick tip: grab some snacks from the nearby shops, find a spot on the grass, and get those perfect 'living my best life in Berlin' photos!",
-  },
-  {
-    name: "Sanssouci Palace",
-    image: "/images/sanssouci.JPEG",
-    description:
-      "Okay, technically this is in Potsdam (like 30 mins from Berlin), but you HAVE to visit Sanssouci Palace! It gives major Bridgerton vibes with its rococo architecture and stunning gardens. The terraced vineyard in front of the palace is probably the most Instagram worthy spot. Maybe try to visit during spring or fall (I visited during winter and the garden was not that welcoming great :() and send me your photos!",
-  },
-]
 
 // Add type definition before the timeline item component
 interface SpotData {

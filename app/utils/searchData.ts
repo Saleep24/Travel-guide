@@ -1,7 +1,5 @@
-// Import spot data from city pages
-import { instaSpots as berlinSpots } from '../berlin/page'
-import { instaSpots as hamburgSpots } from '../hamburg/page'
-import { instaSpots as lubeckSpots } from '../lubeck/page'
+// Import spot data from data file
+import { berlinSpots, hamburgSpots, lubeckSpots } from '../data/spots'
 
 // Create search data array
 export const searchData = [
@@ -24,7 +22,7 @@ export const searchData = [
     link: "/berlin",
     type: "city"
   },
-  // Convert Lübeck spots to search format
+  // Convert spots to search format
   ...lubeckSpots.map(spot => ({
     title: spot.name,
     description: spot.description,
@@ -33,7 +31,6 @@ export const searchData = [
     city: "Lübeck",
     image: spot.image
   })),
-  // Convert Hamburg spots to search format
   ...hamburgSpots.map(spot => ({
     title: spot.name,
     description: spot.description,
@@ -42,7 +39,6 @@ export const searchData = [
     city: "Hamburg",
     image: spot.image
   })),
-  // Convert Berlin spots to search format
   ...berlinSpots.map(spot => ({
     title: spot.name,
     description: spot.description,
